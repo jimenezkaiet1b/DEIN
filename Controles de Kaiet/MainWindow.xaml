@@ -11,13 +11,42 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
-           
+
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Label Grid.Row="0" Grid.Column="1" Content="DISEÑO DE CONTROL" HorizontalAlignment="Center" ></Label>
+        <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Background="white"/>
+        <Label Grid.Row="0" Grid.ColumnSpan="3" Content="DISEÑO DE CONTROL" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Heavy" FontSize="24" />
+        <TextBox Grid.Row="1" Grid.Column="0" Text="Texto en una sola línea" Background="AliceBlue" VerticalAlignment="Top" Margin="10,10,10,0"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="0" AcceptsReturn="true" TextWrapping="Wrap" Text="Texto en múltiples líneas" VerticalAlignment="Bottom" Margin="10,0,10,10"></TextBox>
+        <ComboBox Grid.Row="1" Grid.Column="1" Grid.RowSpan="1">
+            <ComboBoxItem>
+                <StackPanel Orientation="Vertical">
+                    <Image Source="Imagenes/PaulAvery.jpg" Width="50" Height="50"></Image>
+                    <TextBlock>Paul Avery</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Vertical">
+                    <Image Source="Imagenes/chloesevigny.jpg" Width="50" Height="50"></Image>
+                    <TextBlock>Melanie</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Vertical">
+                    <Image Source="Imagenes/RobertGraysmith.jpg"  Height="50" Width="50" />
+                    <TextBlock>Robert Graysmith</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Vertical">
+                    <Image Source="Imagenes/MarkRuffalo.jpg"  Height="50" Width="50" />
+                    <TextBlock>Robert Graysmith</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+        </ComboBox>
     </Grid>
 </Window>
