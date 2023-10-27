@@ -23,6 +23,7 @@ namespace Controles_de_Kaiet
         public MainWindow()
         {
             InitializeComponent();
+
         }
     }
 }
