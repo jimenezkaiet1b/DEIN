@@ -25,26 +25,26 @@
         <TextBox Grid.Row="1" Grid.Column="0" SpellCheck.IsEnabled="True" TextWrapping="Wrap"  Text="Texto en múltiples líneas" VerticalAlignment="Bottom" Margin="10,0,10,10"></TextBox>
         <ComboBox Grid.Row="1" Grid.Column="1" Grid.RowSpan="1"  Margin="50,50,50,50">
             <ComboBoxItem>
-                <StackPanel Orientation="Vertical">
-                    <Image Source="Imagenes1/PaulAvery.jpg" Width="50" Height="50"></Image>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Imagenes1/PaulAvery.jpg" Width="25" Height="25"></Image>
                     <TextBlock>Paul Avery</TextBlock>
                 </StackPanel>
             </ComboBoxItem>
             <ComboBoxItem>
-                <StackPanel Orientation="Vertical">
-                    <Image Source="Imagenes1/chloesevigny.jpg" Width="50" Height="50"></Image>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Imagenes1/chloesevigny.jpg" Width="25" Height="25"></Image>
                     <TextBlock>Melanie</TextBlock>
                 </StackPanel>
             </ComboBoxItem>
             <ComboBoxItem>
-                <StackPanel Orientation="Vertical">
-                    <Image Source="Imagenes1/RobertGraysmith.jpg"  Height="50" Width="50" />
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Imagenes1/RobertGraysmith.jpg"  Height="25" Width="25" />
                     <TextBlock>Robert Graysmith</TextBlock>
                 </StackPanel>
             </ComboBoxItem>
             <ComboBoxItem>
-                <StackPanel Orientation="Vertical">
-                    <Image Source="Imagenes1/MarkRuffalo.jpg"  Height="50" Width="50" />
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Imagenes1/MarkRuffalo.jpg"  Height="25" Width="25" />
                     <TextBlock>Dave Toschi</TextBlock>
                 </StackPanel>
             </ComboBoxItem>
