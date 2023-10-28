@@ -1,0 +1,21 @@
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Release\Navegacion de Kaiet.csproj.AssemblyReference.cache
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Release\MainWindow.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Release\Page1.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Release\Window1.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Release\Window2.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Release\App.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Release\Navegacion de Kaiet_MarkupCompile.cache
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Release\Navegacion de Kaiet_MarkupCompile.lref
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\bin\Release\Navegacion de Kaiet.exe.config
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\bin\Release\Navegacion de Kaiet.exe
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\bin\Release\Navegacion de Kaiet.pdb
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Release\MainWindow.baml
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Release\Page1.baml
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Release\Window1.baml
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Release\Window2.baml
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Release\Navegacion de Kaiet.g.resources
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Release\Navegacion_de_Kaiet.Properties.Resources.resources
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Release\Navegacion de Kaiet.csproj.GenerateResource.cache
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Release\Navegacion de Kaiet.csproj.CoreCompileInputs.cache
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Release\Navegacion de Kaiet.exe
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Release\Navegacion de Kaiet.pdb

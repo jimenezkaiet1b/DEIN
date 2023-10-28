@@ -1,0 +1,15 @@
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\bin\Debug\Navegacion de Kaiet.exe.config
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\bin\Debug\Navegacion de Kaiet.exe
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\bin\Debug\Navegacion de Kaiet.pdb
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Debug\Navegacion de Kaiet.csproj.AssemblyReference.cache
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Debug\MainWindow.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Debug\App.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Debug\Navegacion de Kaiet_MarkupCompile.cache
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Debug\Navegacion de Kaiet_MarkupCompile.lref
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Debug\MainWindow.baml
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Debug\Navegacion de Kaiet.g.resources
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Debug\Navegacion_de_Kaiet.Properties.Resources.resources
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Debug\Navegacion de Kaiet.csproj.GenerateResource.cache
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Debug\Navegacion de Kaiet.csproj.CoreCompileInputs.cache
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Debug\Navegacion de Kaiet.exe
+C:\Users\kaiet\Documents\DAM\DEIN\Navegacion de Kaiet\obj\Debug\Navegacion de Kaiet.pdb
