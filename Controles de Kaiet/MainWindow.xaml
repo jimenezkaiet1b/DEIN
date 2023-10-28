@@ -53,32 +53,38 @@
         <ListBox Grid.Column="2" Grid.Row="1">
             <ListBoxItem>
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock>DEIN</TextBlock>
+                    <TextBlock VerticalAlignment="Center">DEIN</TextBlock>
+                    <ProgressBar VerticalAlignment="Center" HorizontalAlignment="Right" Value="20" Maximum="100" Width="180" Height="20" Margin="5"/>
                 </StackPanel>
             </ListBoxItem>
             <ListBoxItem>
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock>DWEB</TextBlock>
+                    <TextBlock VerticalAlignment="Center">DWEB</TextBlock>
+                    <ProgressBar VerticalAlignment="Center" HorizontalAlignment="Right" Value="40" Maximum="100" Width="180" Height="20" Margin="5"/>
                 </StackPanel>
             </ListBoxItem>
             <ListBoxItem>
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock>PSP</TextBlock>
+                    <TextBlock VerticalAlignment="Center">PSP</TextBlock>
+                    <ProgressBar VerticalAlignment="Center" HorizontalAlignment="Right" Value="90" Maximum="100" Width="180" Height="20" Margin="5"/>
                 </StackPanel>
             </ListBoxItem>
             <ListBoxItem>
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock>PMDM</TextBlock>
+                    <TextBlock VerticalAlignment="Center">PMDM</TextBlock>
+                    <ProgressBar VerticalAlignment="Center" HorizontalAlignment="Right" Value="30" Maximum="100" Width="180" Height="20" Margin="5"/>
                 </StackPanel>
             </ListBoxItem>
             <ListBoxItem Background="Red">
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock>SGE</TextBlock>
+                    <TextBlock VerticalAlignment="Center">SGE</TextBlock>
+                    <ProgressBar VerticalAlignment="Center" HorizontalAlignment="Right" Value="10" Maximum="100" Width="180" Height="20" Margin="5"/>
                 </StackPanel>
             </ListBoxItem>
             <ListBoxItem>
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock>Ingles</TextBlock>
+                    <TextBlock VerticalAlignment="Center">Ingles</TextBlock>
+                    <ProgressBar VerticalAlignment="Center" HorizontalAlignment="Right" Value="90" Maximum="100" Width="180" Height="20" Margin="5"/>
                 </StackPanel>
             </ListBoxItem>
         </ListBox>
