@@ -4,6 +4,26 @@
              xmlns:local="clr-namespace:Estilos_Kaiet"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+            <!--<Setter Property="FontFamily" Value="Inter"</Setter>-->
+            <Setter Property= "Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="20" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="FontSize" Value="32"></Setter>
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+
+
+        </Style>
          
     </Application.Resources>
 </Application>
