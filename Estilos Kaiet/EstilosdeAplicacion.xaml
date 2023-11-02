@@ -18,6 +18,11 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button x:Name="bttBoton" Grid.Column="1" Grid.Row="1">CREAR TORNEO</Button>
+        <Button x:Name="bttCrearTorneo" Grid.Column="1" Grid.Row="1">CREAR TORNEO</Button>
+        <Button x:Name="bttInscripcion" Grid.Column="0" Grid.Row="1">INSCRIPCIÓN</Button>
+        <Button x:Name="bttInformacion" Grid.Column="2" Grid.Row="4">INFORMACIÓN</Button>
+        <TextBlock Text="CREADOR DE TORNEOS" Grid.Column="1" Grid.Row="0" TextWrapping="Wrap" Margin="10" FontSize="32" Foreground="White" FontWeight="ExtraBlack" />
+        <TextBlock Text="TORNEOS" Grid.Column="0" Grid.Row="0" TextWrapping="Wrap" Margin="10" FontSize="32" Foreground="White" FontWeight="ExtraBlack" HorizontalAlignment="Center" />
+
     </Grid>
 </Window>

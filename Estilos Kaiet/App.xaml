@@ -21,9 +21,8 @@
             <Setter Property="FontSize" Value="32"></Setter>
             <Setter Property="FontWeight" Value="Bold"></Setter>
             <Setter Property="VerticalAlignment" Value="Center"></Setter>
-
-
         </Style>
+
          
     </Application.Resources>
 </Application>
