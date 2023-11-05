@@ -1,0 +1,22 @@
+C:\Users\kaiet\Documents\DAM\DEIN\Estilos Kaiet\obj\Release\Estilos Kaiet.csproj.AssemblyReference.cache
+C:\Users\kaiet\Documents\DAM\DEIN\Estilos Kaiet\obj\Release\Window2.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\Estilos Kaiet\obj\Release\Window3.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\Estilos Kaiet\obj\Release\Window4.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\Estilos Kaiet\obj\Release\App.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\Estilos Kaiet\obj\Release\Estilos Kaiet_MarkupCompile.cache
+C:\Users\kaiet\Documents\DAM\DEIN\Estilos Kaiet\obj\Release\Estilos Kaiet_MarkupCompile.lref
+C:\Users\kaiet\Documents\DAM\DEIN\Estilos Kaiet\obj\Release\MainWindow.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\Estilos Kaiet\bin\Release\Estilos Kaiet.exe.config
+C:\Users\kaiet\Documents\DAM\DEIN\Estilos Kaiet\bin\Release\Estilos Kaiet.exe
+C:\Users\kaiet\Documents\DAM\DEIN\Estilos Kaiet\bin\Release\Estilos Kaiet.pdb
+C:\Users\kaiet\Documents\DAM\DEIN\Estilos Kaiet\obj\Release\App.baml
+C:\Users\kaiet\Documents\DAM\DEIN\Estilos Kaiet\obj\Release\MainWindow.baml
+C:\Users\kaiet\Documents\DAM\DEIN\Estilos Kaiet\obj\Release\Window2.baml
+C:\Users\kaiet\Documents\DAM\DEIN\Estilos Kaiet\obj\Release\Window3.baml
+C:\Users\kaiet\Documents\DAM\DEIN\Estilos Kaiet\obj\Release\Window4.baml
+C:\Users\kaiet\Documents\DAM\DEIN\Estilos Kaiet\obj\Release\Estilos Kaiet.g.resources
+C:\Users\kaiet\Documents\DAM\DEIN\Estilos Kaiet\obj\Release\Estilos_Kaiet.Properties.Resources.resources
+C:\Users\kaiet\Documents\DAM\DEIN\Estilos Kaiet\obj\Release\Estilos Kaiet.csproj.GenerateResource.cache
+C:\Users\kaiet\Documents\DAM\DEIN\Estilos Kaiet\obj\Release\Estilos Kaiet.csproj.CoreCompileInputs.cache
+C:\Users\kaiet\Documents\DAM\DEIN\Estilos Kaiet\obj\Release\Estilos Kaiet.exe
+C:\Users\kaiet\Documents\DAM\DEIN\Estilos Kaiet\obj\Release\Estilos Kaiet.pdb

@@ -15,13 +15,20 @@ using System.Windows.Shapes;
 namespace Estilos_Kaiet
 {
     /// <summary>
-    /// Lógica de interacción para EstilosdeVentan.xaml
+    /// Lógica de interacción para Window2.xaml
     /// </summary>
-    public partial class EstilosdeVentan : Window
+    public partial class Window2 : Window
     {
-        public EstilosdeVentan()
+        public Window2()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window4 window4 = new Window4();
+            window4.Show();
+            this.Close();
         }
     }
 }

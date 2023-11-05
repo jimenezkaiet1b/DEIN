@@ -15,13 +15,20 @@ using System.Windows.Shapes;
 namespace Estilos_Kaiet
 {
     /// <summary>
-    /// Lógica de interacción para EstilosInviduales.xaml
+    /// Lógica de interacción para Window4.xaml
     /// </summary>
-    public partial class EstilosInviduales : Window
+    public partial class Window4 : Window
     {
-        public EstilosInviduales()
+        public Window4()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
         }
     }
 }

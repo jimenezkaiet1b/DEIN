@@ -55,22 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="EstilosdeAplicacion.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="EstilosdeDiseños.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="EstilosdeVentan.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="EstilosInviduales.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <Compile Include="Window2.xaml.cs">
+      <DependentUpon>Window2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window3.xaml.cs">
+      <DependentUpon>Window3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window4.xaml.cs">
+      <DependentUpon>Window4.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -79,22 +72,22 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="EstilosdeAplicacion.xaml.cs">
-      <DependentUpon>EstilosdeAplicacion.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="EstilosdeDiseños.xaml.cs">
-      <DependentUpon>EstilosdeDiseños.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="EstilosdeVentan.xaml.cs">
-      <DependentUpon>EstilosdeVentan.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="EstilosInviduales.xaml.cs">
-      <DependentUpon>EstilosInviduales.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Window2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -124,6 +117,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Imagenes\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\llavecomp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\ejemplo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\candado.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

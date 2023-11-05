@@ -24,5 +24,17 @@ namespace Estilos_Kaiet
         {
             InitializeComponent();
         }
+
+        private void bttCrearTorneo_Click(object sender, RoutedEventArgs e)
+        {
+            Window3 window3 = new Window3();
+            window3.Show();
+            this.Close();
+        }
+
+        private void bttInscripcion_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

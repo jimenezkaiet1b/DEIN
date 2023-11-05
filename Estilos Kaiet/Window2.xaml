@@ -1,0 +1,118 @@
+﻿<Window x:Class="Estilos_Kaiet.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Estilos_Kaiet"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800" Background="#C0D6DF"
+        x:Name="window2">
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="14*"></ColumnDefinition>
+            <ColumnDefinition Width="61.3*"></ColumnDefinition>
+            <ColumnDefinition Width="61.3*"></ColumnDefinition>
+            <ColumnDefinition Width="61.3*"></ColumnDefinition>
+
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <!--
+			<RowDefinition Height="54*"></RowDefinition>
+			<RowDefinition Height="40*"></RowDefinition>
+			<RowDefinition Height="40*"></RowDefinition>
+			<RowDefinition Height="30*"></RowDefinition>
+			<RowDefinition Height="33*"></RowDefinition>
+			<RowDefinition Height="119*"></RowDefinition>
+			<RowDefinition Height="25*"/>
+			<RowDefinition Height="40*"></RowDefinition>
+			<RowDefinition Height="58*"></RowDefinition> -->
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+
+
+
+
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" FontSize="20" Margin="34,0" Width="177" >
+            <Bold>TORNEO CREADO</Bold>
+        </Label>
+        <Separator  Background="black" Grid.Row="0" Grid.ColumnSpan="4"  Margin="0,20,0,0"/>
+
+        <StackPanel  Grid.Row="1" Grid.Column="0">
+            <Image Source="Imagenes\ajustes.png" Height="15" ></Image>
+            <TextBlock Text="Ajustes" HorizontalAlignment="Center" />
+        </StackPanel>
+        <StackPanel  Grid.Row="2" Grid.Column="0">
+            <Image Source="Imagenes\informacion.png" Height="15" ></Image>
+            <TextBlock Text="Informacion" HorizontalAlignment="Center" />
+        </StackPanel>
+        <StackPanel  Grid.Row="3" Grid.Column="0">
+            <Image Source="Imagenes\Camiseta.png" Height="15" ></Image>
+            <TextBlock Text="Menu" HorizontalAlignment="Center" />
+        </StackPanel>
+        <StackPanel  Grid.Row="4" Grid.Column="0">
+            <Image Source="Imagenes\Calendario.png" Height="15" />
+            <TextBlock Text="Calendario" HorizontalAlignment="Center" />
+        </StackPanel>
+
+
+
+
+
+        <Label Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" FontSize="20">
+            <TextBlock>Titulo del torneo</TextBlock>
+        </Label>
+        <Label Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" FontSize="20" Margin="81,0" Width="83">
+            <Border  BorderThickness="0,0,0,1" BorderBrush="Black">
+                <TextBlock >Nombre</TextBlock>
+            </Border>
+        </Label>
+        <Label Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" FontSize="20" Margin="50,0" Width="146">
+            <TextBlock>Dias de partido</TextBlock>
+        </Label>
+        <Label Grid.Row="4" Grid.Column="2" HorizontalAlignment="Center" FontSize="20" Margin="64,0" Width="117">
+            <TextBlock>Localizacion</TextBlock>
+        </Label>
+        <Label Grid.Row="4" Grid.Column="3" HorizontalAlignment="Center" FontSize="20" Margin="73,0" Width="99">
+            <TextBlock>Divisiones</TextBlock>
+        </Label>
+        <Label Background="white" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" FontSize="20" Margin="68,0,68,81" Width="110">
+            <TextBlock>Drop down</TextBlock>
+        </Label>
+        <Label Background="white" Grid.Row="5" Grid.Column="2" HorizontalAlignment="Center" FontSize="20" Margin="76,0,76,81" Width="93">
+            <TextBlock>Dirección</TextBlock>
+        </Label>
+        <Button  Grid.Row="6" Grid.Column="1" >
+            <TextBlock>Ver</TextBlock>
+        </Button>
+        <Button Grid.Row="6" Grid.Column="2" >
+            <TextBlock>Anadir</TextBlock>
+        </Button>
+        <Button   Grid.Row="6" Grid.Column="3">
+            <TextBlock>Anadir</TextBlock>
+        </Button>
+
+
+        <Label Background="White" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" FontSize="20" Margin="10,10,50,0" Width="676" Grid.ColumnSpan="3">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                <Button Content="Jornada" Margin="5" />
+                <Button Content="Clasificacion" Margin="5" />
+                <Button Content="Equipos"  IsEnabled="False" Margin="5" />
+                <Button Content="Calendario" Margin="5" Click="Button_Click" />
+            </StackPanel>
+        </Label>
+
+
+
+    </Grid>
+</Window>
