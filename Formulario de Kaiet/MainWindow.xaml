@@ -50,7 +50,7 @@
             <TextBox Width="150"></TextBox>
         </StackPanel>
         <StackPanel Grid.Row="5" Orientation="Horizontal">
-            <TextBlock Text="Fecha de nacimiento" Width="110"></TextBlock>
+            <DatePicker Text="Fecha de nacimiento" Width="400"></DatePicker>
         </StackPanel>
         <StackPanel Grid.Row="6" Orientation="Horizontal">
             <TextBlock Text="DNI" Width="50"></TextBlock>
