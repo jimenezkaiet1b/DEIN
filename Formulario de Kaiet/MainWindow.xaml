@@ -35,27 +35,33 @@
         <TextBlock Text="Introducción de Datos de Empleados" FontSize="20" HorizontalAlignment="Center" Margin="216,0,214,0" Width="362"/>
         <StackPanel Margin="0,0,0,5" Grid.Row="1" Orientation="Horizontal">
             <TextBlock Text="Nombre" Width="50"></TextBlock>
-            <TextBox Width="350" TextChanged="TextBox_TextChanged"/>
+            <TextBox Width="350" Name="nombreTextBox" TextChanged="TextBox_TextChanged"/>
         </StackPanel>
+        <TextBlock x:Name="nombreErrorTextBlock" Foreground="Red" Grid.Row="2" Margin="0,0,0,5"/>
         <StackPanel Margin="0,0,0,5" Grid.Row="2" Orientation="Horizontal">
             <TextBlock Text="Apellidos" Width="50"></TextBlock>
-            <TextBox Width="350"></TextBox>
+            <TextBox Width="350"  TextChanged="TextBox_TextChanged"></TextBox>
         </StackPanel>
+        
         <StackPanel Margin="0,0,0,5" Grid.Row="3" Orientation="Horizontal">
             <TextBlock Text="E-mail" Width="50"></TextBlock>
-            <TextBox Width="350"></TextBox>
+            <TextBox Width="350"  Name="emailTextBox"  TextChanged="TextBox_TextChanged"></TextBox>
         </StackPanel>
+        <TextBlock x:Name="emailErrorTextBlock" Foreground="Red" Grid.Row="4" Margin="0,0,0,5"/>
+
         <StackPanel Margin="0,0,0,5" Grid.Row="4" Orientation="Horizontal">
             <TextBlock Text="Teléfono" Width="50"></TextBlock>
-            <TextBox Width="150"></TextBox>
+            <TextBox Width="150" Name="telefonoTextBox" TextChanged="TextBox_TextChanged"></TextBox>
         </StackPanel>
+        <TextBlock x:Name="telefonoErrorTextBlock" Foreground="Red" Grid.Row="5" Margin="0,0,0,5"/>
+        
         <StackPanel Margin="0,0,0,5" Grid.Row="5" Orientation="Horizontal">
             <TextBlock Text="Fecha de nacimiento" Width="120" VerticalAlignment="Center"></TextBlock>
             <DatePicker Text="Fecha de nacimiento" Width="281"/>
         </StackPanel>
         <StackPanel Grid.Row="6" Orientation="Horizontal">
             <TextBlock Text="DNI" Width="50"></TextBlock>
-            <TextBox Width="350"></TextBox>
+            <TextBox Width="350"  TextChanged="TextBox_TextChanged"></TextBox>
         </StackPanel>
         <StackPanel Grid.Row="7" Orientation="Horizontal">
             <TextBlock Text="Adjuntar fotografia" Width="Auto" Margin="0,62,0,60" VerticalAlignment="Center" Height="22"/>
@@ -89,11 +95,11 @@
             <TextBox Height="69"></TextBox>
         </StackPanel>
         <StackPanel Margin="0,10,0,0" Orientation="Horizontal" Grid.Row="12" HorizontalAlignment="Center" Height="35" >
-            <Button Width="100" Margin="0,0,10,0">Guardar</Button>
-            <Button Width="100">Cancelar</Button>
+            <Button Width="100" Margin="0,0,10,0" Click="Button_Click_1">Guardar</Button>
+            <Button Width="100" Click="Button_Click_2">Cancelar</Button>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Grid.Row="13" Margin="0,10,0,0">
-            <DataGrid>
+            <DataGrid SelectionChanged="DataGrid_SelectionChanged">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Nombre" Width="100"></DataGridTextColumn>
                     <DataGridTextColumn Header="Apellidos" Width="300"></DataGridTextColumn>

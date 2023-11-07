@@ -22,6 +22,7 @@ namespace Formulario_de_Kaiet
     /// </summary>
     public partial class MainWindow : Window
     {
+        private List<Empleado> empleados = new List<Empleado>();
         public MainWindow()
         {
             InitializeComponent();
@@ -53,7 +54,52 @@ namespace Formulario_de_Kaiet
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
+            TextBox textBox = (TextBox)sender;
+            if (string.IsNullOrWhiteSpace(textBox.Text))
+            {
+               
+                if (textBox == nombreTextBox)
+                {
+                    nombreErrorTextBlock.Text = "El campo Nombre es obligatorio.";
+                }
+                else if (textBox == emailTextBox)
+                {
+                    emailErrorTextBlock.Text = "El campo E-mail es obligatorio.";
+                }
+                else if (textBox == telefonoTextBox)
+                {
+                    telefonoErrorTextBlock.Text = "El campo Teléfono es obligatorio.";
+                }
+            }
 
+        }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(nombreTextBox.Text) || string.IsNullOrWhiteSpace(emailTextBox.Text) || string.IsNullOrWhiteSpace(telefonoTextBox.Text))
+            {
+                MessageBox.Show("Por favor complete los campos obligatorios.", "Error de validación", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else {
+                Empleado nuevoEmpleado = new Empleado {
+                    nombre = nombreTextBox.Text,
+                    email = emailTextBox.Text,
+                    telefono = telefonoTextBox.Text
+                };
+
+                empleados.Add(nuevoEmpleado);
+            }
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
