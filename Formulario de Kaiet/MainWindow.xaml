@@ -35,23 +35,23 @@
         <TextBlock Text="Introducción de Datos de Empleados" FontSize="20" HorizontalAlignment="Center" Margin="216,0,214,0" Width="362"/>
         <StackPanel Margin="0,0,0,5" Grid.Row="1" Orientation="Horizontal">
             <TextBlock Text="Nombre" Width="50"></TextBlock>
-            <TextBox Width="350" Name="nombreTextBox" TextChanged="TextBox_TextChanged"/>
+            <TextBox Width="350" Text="nombre" GotFocus="Txt_GotFocus" LostFocus="LostFocus"/>
         </StackPanel>
         <TextBlock x:Name="nombreErrorTextBlock" Foreground="Red" Grid.Row="2" Margin="0,0,0,5"/>
         <StackPanel Margin="0,0,0,5" Grid.Row="2" Orientation="Horizontal">
-            <TextBlock Text="Apellidos" Width="50"></TextBlock>
-            <TextBox Width="350"  TextChanged="TextBox_TextChanged" Name="apellidosTextBox"></TextBox>
+            <TextBlock  Width="50"></TextBlock>
+            <TextBox Width="350"  Text="Apellidos"/>
         </StackPanel>
         
         <StackPanel Margin="0,0,0,5" Grid.Row="3" Orientation="Horizontal">
             <TextBlock Text="E-mail" Width="50"></TextBlock>
-            <TextBox Width="350"  Name="emailTextBox"  TextChanged="TextBox_TextChanged"></TextBox>
+            <TextBox Width="350"  Text="E-mail"   GotFocus="Txt_GotFocus" LostFocus="LostFocus"></TextBox>
         </StackPanel>
         <TextBlock x:Name="emailErrorTextBlock" Foreground="Red" Grid.Row="4" Margin="0,0,0,5"/>
 
         <StackPanel Margin="0,0,0,5" Grid.Row="4" Orientation="Horizontal">
             <TextBlock Text="Teléfono" Width="50"></TextBlock>
-            <TextBox Width="150" Name="telefonoTextBox" TextChanged="TextBox_TextChanged"></TextBox>
+            <TextBox Width="150"   GotFocus="Txt_GotFocus" LostFocus="LostFocus"></TextBox>
         </StackPanel>
         <TextBlock x:Name="telefonoErrorTextBlock" Foreground="Red" Grid.Row="5" Margin="0,0,0,5"/>
         

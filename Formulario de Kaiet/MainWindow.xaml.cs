@@ -51,24 +51,33 @@ namespace Formulario_de_Kaiet
                 }
             }
         }
+        private void Txt_GotFocus(object sender, TextChangedEventArgs e) {
+            if (sender is TextBox textBox) {
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+                if (textBox.Text == "Nombre" || textBox.Text == "E-mail" || textBox.Text == "Teléfono") {
+                    textBox.Text = "";
+                }
+            }
+        }
+
+        private void Txt_LostFocus(object sender, TextChangedEventArgs e)
         {
-            TextBox textBox = (TextBox)sender;
-            if (string.IsNullOrWhiteSpace(textBox.Text))
-            {
-               
-                if (textBox == nombreTextBox)
+            if(sender is TextBox textBox){
+                if (string.IsNullOrWhiteSpace(textBox.Text))
                 {
-                    nombreErrorTextBlock.Text = "El campo Nombre es obligatorio.";
-                }
-                else if (textBox == emailTextBox)
-                {
-                    emailErrorTextBlock.Text = "El campo E-mail es obligatorio.";
-                }
-                else if (textBox == telefonoTextBox)
-                {
-                    telefonoErrorTextBlock.Text = "El campo Teléfono es obligatorio.";
+
+                    if (textBox.Name == "txtNombre" )
+                    {
+                       textBox.Text = "Nombre";
+                    }
+                    else if (textBox.Text == "txtEmail")
+                    {
+                        textBox.Text = "E-mail";
+                    }
+                    else if (textBox.Text == "txttelefono" )
+                    {
+                        textBox.Text  = "Teléfono";
+                    }
                 }
             }
 
@@ -105,5 +114,7 @@ namespace Formulario_de_Kaiet
         {
             this.Close();
         }
+
+        
     }
 }
