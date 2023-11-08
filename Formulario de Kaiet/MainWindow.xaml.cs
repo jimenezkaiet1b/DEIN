@@ -93,6 +93,10 @@ namespace Formulario_de_Kaiet
                 };
 
                 empleados.Add(nuevoEmpleado);
+
+                nombreTextBox.Text = string.Empty;
+                emailTextBox.Text = string.Empty;
+                telefonoTextBox.Text = string.Empty;
             }
 
         }

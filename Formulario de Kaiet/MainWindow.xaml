@@ -40,7 +40,7 @@
         <TextBlock x:Name="nombreErrorTextBlock" Foreground="Red" Grid.Row="2" Margin="0,0,0,5"/>
         <StackPanel Margin="0,0,0,5" Grid.Row="2" Orientation="Horizontal">
             <TextBlock Text="Apellidos" Width="50"></TextBlock>
-            <TextBox Width="350"  TextChanged="TextBox_TextChanged"></TextBox>
+            <TextBox Width="350"  TextChanged="TextBox_TextChanged" Name="apellidosTextBox"></TextBox>
         </StackPanel>
         
         <StackPanel Margin="0,0,0,5" Grid.Row="3" Orientation="Horizontal">
@@ -99,12 +99,28 @@
             <Button Width="100" Click="Button_Click_2">Cancelar</Button>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Grid.Row="13" Margin="0,10,0,0">
-            <DataGrid SelectionChanged="DataGrid_SelectionChanged">
+            <DataGrid SelectionChanged="DataGrid_SelectionChanged" Grid.Row="13">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Nombre" Width="100"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Apellidos" Width="300"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Email" Width="200"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Teléfono" Width="200"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Nombre" Width="100">
+                        <DataGridTextColumn.Binding>
+                            <Binding Path="Text" ElementName="nombreTextBox" Mode="OneWay"/>
+                        </DataGridTextColumn.Binding>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Apellidos" Width="300">
+                        <DataGridTextColumn.Binding>
+                            <Binding Path="Text" ElementName="apellidosTextBox" Mode="OneWay"/>
+                        </DataGridTextColumn.Binding>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Email" Width="200">
+                        <DataGridTextColumn.Binding>
+                            <Binding Path="Text" ElementName="emailTextBox" Mode="OneWay"/>
+                        </DataGridTextColumn.Binding>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Teléfono" Width="200">
+                        <DataGridTextColumn.Binding>
+                            <Binding Path="Text" ElementName="telefonoTextBox" Mode="OneWay"/>
+                        </DataGridTextColumn.Binding>
+                    </DataGridTextColumn>
                 </DataGrid.Columns>
             </DataGrid>
         </StackPanel>
