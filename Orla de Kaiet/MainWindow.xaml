@@ -52,21 +52,39 @@
             </Button>
         </StackPanel>
         <Image Grid.Row="2" Grid.Column="1" Source="Imagenes/ordenador.png" Margin="15"/>
-
+        <!-- Fila 4, Puesto 2 -->
         <StackPanel Grid.Row="1" Grid.Column="2" Orientation="Vertical" >
             <Viewbox Height="20" MaxWidth="100" StretchDirection="DownOnly">
-                <TextBlock Text="Aritz P" FontStretch="Expanded" x:Name="LabelPuesto41" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text=" Randy" FontStretch="Expanded" x:Name="LabelPuesto42" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </Viewbox>
-            <Button UseLayoutRounding="True" x:Name="Persona41" Margin="15,15,15,0" BorderThickness="0" Height="40" Width="40">
+            <Button UseLayoutRounding="True" x:Name="Persona42" Margin="15,15,15,0" BorderThickness="0" Height="40" Width="40">
                 <Button.OpacityMask>
-                    <ImageBrush ImageSource="Imagenes/AritzA.jpg"/>
+                    <ImageBrush ImageSource="Imagenes/randy.jpg"/>
                 </Button.OpacityMask>
                 <Button.Background>
-                    <ImageBrush Stretch="UniformToFill" ImageSource="/Imagenes/AritzA.jpg"
+                    <ImageBrush Stretch="UniformToFill" ImageSource="/Imagenes/randy.jpg"
 />
                 </Button.Background>
             </Button>
         </StackPanel>
-        <Image Grid.Row="2" Grid.Column="1" Source="Imagenes/ordenador.png" Margin="15"/>
+        <Image Grid.Row="2" Grid.Column="2" Source="Imagenes/ordenador.png" Margin="15"/>
+        <!-- Fila 4, Puesto 3 -->
+        <StackPanel Grid.Row="1" Grid.Column="4" Orientation="Vertical" >
+            <Viewbox Height="20" MaxWidth="100" StretchDirection="DownOnly">
+                <TextBlock Text=" Randy" FontStretch="Expanded" x:Name="LabelPuesto43" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Button UseLayoutRounding="True" x:Name="Persona43" Margin="15,15,15,0" BorderThickness="0" Height="40" Width="40">
+                <Button.OpacityMask>
+                    <ImageBrush ImageSource="Imagenes/randy.jpg"/>
+                </Button.OpacityMask>
+                <Button.Background>
+                    <ImageBrush Stretch="UniformToFill" ImageSource="/Imagenes/randy.jpg"
+/>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+        <Image Grid.Row="2" Grid.Column="4" Source="Imagenes/ordenador.png" Margin="15"/>
     </Grid>
+    
+    
 </Window>
