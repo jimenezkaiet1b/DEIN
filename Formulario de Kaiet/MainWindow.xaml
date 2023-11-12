@@ -37,7 +37,7 @@
             <TextBlock Text="Nombre*" Width="50"></TextBlock>
             <TextBox x:Name="nombreBox" Width="350" />
         </StackPanel>
-        <TextBlock x:Name="nombreErrorTextBlock" Foreground="Red" Grid.Row="2" Margin="0,0,0,5"/>
+        
         <StackPanel Margin="0,0,0,5" Grid.Row="2" Orientation="Horizontal">
             <TextBlock Text="Apellidos"  Width="50"></TextBlock>
             <TextBox Width="350"   x:Name="apellidosBox"/>
@@ -47,13 +47,12 @@
             <TextBlock Text="E-mail*" Width="50"></TextBlock>
             <TextBox  x:Name="emailBox" Width="350"  ></TextBox>
         </StackPanel>
-        <TextBlock x:Name="emailErrorTextBlock" Foreground="Red" Grid.Row="4" Margin="0,0,0,5"/>
-
+       
         <StackPanel Margin="0,0,0,5" Grid.Row="4" Orientation="Horizontal">
             <TextBlock  Text="Teléfono*" Width="50"></TextBlock>
             <TextBox Width="150"  x:Name="telefonoBox"  GotFocus="Txt_GotFocus"></TextBox>
         </StackPanel>
-        <TextBlock x:Name="telefonoErrorTextBlock" Foreground="Red" Grid.Row="5" Margin="0,0,0,5"/>
+        
         
         <StackPanel Margin="0,0,0,5" Grid.Row="5" Orientation="Horizontal">
             <TextBlock Text="Fecha de nacimiento" Width="120" VerticalAlignment="Center"></TextBlock>
