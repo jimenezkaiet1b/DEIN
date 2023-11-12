@@ -34,24 +34,24 @@
 
         <TextBlock Text="Introducción de Datos de Empleados" FontSize="20" HorizontalAlignment="Center" Margin="216,0,214,0" Width="362"/>
         <StackPanel Margin="0,0,0,5" Grid.Row="1" Orientation="Horizontal">
-            <TextBlock Text="Nombre" Width="50"></TextBlock>
-            <TextBox Width="350" Text="nombre" GotFocus="Txt_GotFocus" LostFocus="LostFocus"/>
+            <TextBlock Text="Nombre*" Width="50"></TextBlock>
+            <TextBox x:Name="nombreBox" Width="350" />
         </StackPanel>
         <TextBlock x:Name="nombreErrorTextBlock" Foreground="Red" Grid.Row="2" Margin="0,0,0,5"/>
         <StackPanel Margin="0,0,0,5" Grid.Row="2" Orientation="Horizontal">
-            <TextBlock  Width="50"></TextBlock>
-            <TextBox Width="350"  Text="Apellidos"/>
+            <TextBlock Text="Apellidos"  Width="50"></TextBlock>
+            <TextBox Width="350"   x:Name="apellidosBox"/>
         </StackPanel>
         
         <StackPanel Margin="0,0,0,5" Grid.Row="3" Orientation="Horizontal">
-            <TextBlock Text="E-mail" Width="50"></TextBlock>
-            <TextBox Width="350"  Text="E-mail"   GotFocus="Txt_GotFocus" LostFocus="LostFocus"></TextBox>
+            <TextBlock Text="E-mail*" Width="50"></TextBlock>
+            <TextBox  x:Name="emailBox" Width="350"  ></TextBox>
         </StackPanel>
         <TextBlock x:Name="emailErrorTextBlock" Foreground="Red" Grid.Row="4" Margin="0,0,0,5"/>
 
         <StackPanel Margin="0,0,0,5" Grid.Row="4" Orientation="Horizontal">
-            <TextBlock Text="Teléfono" Width="50"></TextBlock>
-            <TextBox Width="150"   GotFocus="Txt_GotFocus" LostFocus="LostFocus"></TextBox>
+            <TextBlock  Text="Teléfono*" Width="50"></TextBlock>
+            <TextBox Width="150"  x:Name="telefonoBox"  GotFocus="Txt_GotFocus"></TextBox>
         </StackPanel>
         <TextBlock x:Name="telefonoErrorTextBlock" Foreground="Red" Grid.Row="5" Margin="0,0,0,5"/>
         
@@ -61,7 +61,7 @@
         </StackPanel>
         <StackPanel Grid.Row="6" Orientation="Horizontal">
             <TextBlock Text="DNI" Width="50"></TextBlock>
-            <TextBox Width="350"  TextChanged="TextBox_TextChanged"></TextBox>
+            <TextBox Width="350"></TextBox>
         </StackPanel>
         <StackPanel Grid.Row="7" Orientation="Horizontal">
             <TextBlock Text="Adjuntar fotografia" Width="Auto" Margin="0,62,0,60" VerticalAlignment="Center" Height="22"/>
@@ -71,11 +71,11 @@
         <StackPanel Grid.Row="8" Orientation="Horizontal">
             <TextBlock Text="Domicilio" Width="50"></TextBlock>
             <StackPanel Orientation="Vertical">
-                <TextBox Width="350" Margin="10,0,0,5" Text="Direccion"></TextBox>
-                <TextBox Width="350" Margin="10,0,0,5" Text="Ciudad"></TextBox>
-                <TextBox Width="350" Margin="10,0,0,5" Text="Provincia"></TextBox>
-                <TextBox Width="350" Margin="10,0,0,5" Text="Codigo Postal"></TextBox>
-                <TextBox Width="350" Margin="10,0,0,5" Text="Pais"></TextBox>
+                <TextBox Width="350" Margin="10,0,0,5" Text="Direccion" x:Name="direccionBox"  GotFocus="Txt_GotFocus" LostFocus="Txt_LostFocus"></TextBox>
+                <TextBox Width="350" Margin="10,0,0,5" Text="Ciudad" x:Name="ciudadBox"  GotFocus="Txt_GotFocus" LostFocus="Txt_LostFocus"></TextBox>
+                <TextBox Width="350" Margin="10,0,0,5" Text="Provincia" x:Name="provinciaBox"  GotFocus="Txt_GotFocus" LostFocus="Txt_LostFocus"></TextBox>
+                <TextBox Width="350" Margin="10,0,0,5" Text="Codigo Postal" x:Name="codigopostalBox"  GotFocus="Txt_GotFocus" LostFocus="Txt_LostFocus"></TextBox>
+                <TextBox Width="350" Margin="10,0,0,5" Text="Pais" x:Name="paisBox" GotFocus="Txt_GotFocus" LostFocus="Txt_LostFocus"></TextBox>
             </StackPanel>
             <Image Source="Imagenes/company.jpg"/>
         </StackPanel>
@@ -99,31 +99,15 @@
             <Button Width="100" Click="Button_Click_2">Cancelar</Button>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Grid.Row="13" Margin="0,10,0,0">
-            <DataGrid SelectionChanged="DataGrid_SelectionChanged" Grid.Row="13">
-                <DataGrid.Columns>
-                    <DataGridTextColumn Header="Nombre" Width="100">
-                        <DataGridTextColumn.Binding>
-                            <Binding Path="Text" ElementName="nombreTextBox" Mode="OneWay"/>
-                        </DataGridTextColumn.Binding>
-                    </DataGridTextColumn>
-                    <DataGridTextColumn Header="Apellidos" Width="300">
-                        <DataGridTextColumn.Binding>
-                            <Binding Path="Text" ElementName="apellidosTextBox" Mode="OneWay"/>
-                        </DataGridTextColumn.Binding>
-                    </DataGridTextColumn>
-                    <DataGridTextColumn Header="Email" Width="200">
-                        <DataGridTextColumn.Binding>
-                            <Binding Path="Text" ElementName="emailTextBox" Mode="OneWay"/>
-                        </DataGridTextColumn.Binding>
-                    </DataGridTextColumn>
-                    <DataGridTextColumn Header="Teléfono" Width="200">
-                        <DataGridTextColumn.Binding>
-                            <Binding Path="Text" ElementName="telefonoTextBox" Mode="OneWay"/>
-                        </DataGridTextColumn.Binding>
-                    </DataGridTextColumn>
-                </DataGrid.Columns>
-            </DataGrid>
-        </StackPanel>
+			<DataGrid x:Name="dataGrid" ItemsSource="{Binding}"    Width="791">
+				<DataGrid.Columns>
+					<DataGridTextColumn Header="Nombre" Width="10*" Binding="{Binding nombre}"/>
+					<DataGridTextColumn Header="Apellidos" Width="40*" Binding="{Binding apellidos}"/>
+					<DataGridTextColumn Header="Email" Width="20*" Binding="{Binding email}"/>
+					<DataGridTextColumn Header="Telefono" Width="10*" Binding="{Binding telefono}"/>
+				</DataGrid.Columns>
+			</DataGrid>
+		</StackPanel>
         
     </Grid>
 </Window>

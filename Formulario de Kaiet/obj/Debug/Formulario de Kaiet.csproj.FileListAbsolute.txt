@@ -1,0 +1,15 @@
+C:\Users\kaiet\Documents\DAM\DEIN\Formulario de Kaiet\obj\Debug\Formulario de Kaiet.csproj.AssemblyReference.cache
+C:\Users\kaiet\Documents\DAM\DEIN\Formulario de Kaiet\obj\Debug\MainWindow.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\Formulario de Kaiet\obj\Debug\App.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\Formulario de Kaiet\obj\Debug\Formulario de Kaiet_MarkupCompile.cache
+C:\Users\kaiet\Documents\DAM\DEIN\Formulario de Kaiet\obj\Debug\Formulario de Kaiet_MarkupCompile.lref
+C:\Users\kaiet\Documents\DAM\DEIN\Formulario de Kaiet\bin\Debug\Formulario de Kaiet.exe.config
+C:\Users\kaiet\Documents\DAM\DEIN\Formulario de Kaiet\bin\Debug\Formulario de Kaiet.exe
+C:\Users\kaiet\Documents\DAM\DEIN\Formulario de Kaiet\bin\Debug\Formulario de Kaiet.pdb
+C:\Users\kaiet\Documents\DAM\DEIN\Formulario de Kaiet\obj\Debug\MainWindow.baml
+C:\Users\kaiet\Documents\DAM\DEIN\Formulario de Kaiet\obj\Debug\Formulario de Kaiet.g.resources
+C:\Users\kaiet\Documents\DAM\DEIN\Formulario de Kaiet\obj\Debug\Formulario_de_Kaiet.Properties.Resources.resources
+C:\Users\kaiet\Documents\DAM\DEIN\Formulario de Kaiet\obj\Debug\Formulario de Kaiet.csproj.GenerateResource.cache
+C:\Users\kaiet\Documents\DAM\DEIN\Formulario de Kaiet\obj\Debug\Formulario de Kaiet.csproj.CoreCompileInputs.cache
+C:\Users\kaiet\Documents\DAM\DEIN\Formulario de Kaiet\obj\Debug\Formulario de Kaiet.exe
+C:\Users\kaiet\Documents\DAM\DEIN\Formulario de Kaiet\obj\Debug\Formulario de Kaiet.pdb

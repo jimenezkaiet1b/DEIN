@@ -35,14 +35,11 @@ namespace Formulario_de_Kaiet
 
             if (openFileDialog.ShowDialog() == true)
             {
-                
+
                 string filePath = openFileDialog.FileName;
                 try
                 {
-                    // Crear un objeto BitmapImage para mostrar la imagen.
                     BitmapImage bitmapImage = new BitmapImage(new Uri(filePath));
-
-                    // Asignar la imagen al control Image en tu interfaz de usuario.
                     imageControl.Source = bitmapImage;
                 }
                 catch (Exception ex)
@@ -51,70 +48,79 @@ namespace Formulario_de_Kaiet
                 }
             }
         }
-        private void Txt_GotFocus(object sender, TextChangedEventArgs e) {
-            if (sender is TextBox textBox) {
-
-                if (textBox.Text == "Nombre" || textBox.Text == "E-mail" || textBox.Text == "Teléfono") {
+        private void Txt_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (sender is TextBox textBox)
+            {
+                if (!String.IsNullOrWhiteSpace(textBox.Text))
+                {
                     textBox.Text = "";
                 }
             }
         }
 
-        private void Txt_LostFocus(object sender, TextChangedEventArgs e)
+        private void Txt_LostFocus(object sender, RoutedEventArgs e)
         {
-            if(sender is TextBox textBox){
+            if (sender is TextBox textBox)
+            {
                 if (string.IsNullOrWhiteSpace(textBox.Text))
                 {
-
-                    if (textBox.Name == "txtNombre" )
+                    if (textBox.Name == "direccionBox")
                     {
-                       textBox.Text = "Nombre";
+                        textBox.Text = "Direccion";
                     }
-                    else if (textBox.Text == "txtEmail")
+                    else if (textBox.Name == "ciudadBox")
                     {
-                        textBox.Text = "E-mail";
+                        textBox.Text = "Ciudad";
                     }
-                    else if (textBox.Text == "txttelefono" )
+                    else if (textBox.Name == "provinciaBox")
                     {
-                        textBox.Text  = "Teléfono";
+                        textBox.Text = "Provincia";
+                    }
+                    else if (textBox.Name == "codigopostalBox")
+                    {
+                        textBox.Text = "Codigo postal";
+                    }
+                    else if (textBox.Name == "paisBox")
+                    {
+                        textBox.Text = "Pais";
                     }
                 }
             }
-
         }
 
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(nombreTextBox.Text) || string.IsNullOrWhiteSpace(emailTextBox.Text) || string.IsNullOrWhiteSpace(telefonoTextBox.Text))
+            if (nombreBox.Text == "")
             {
-                MessageBox.Show("Por favor complete los campos obligatorios.", "Error de validación", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("El campo Nombre no puede estar vacío", "Error");
             }
-            else {
-                Empleado nuevoEmpleado = new Empleado {
-                    nombre = nombreTextBox.Text,
-                    email = emailTextBox.Text,
-                    telefono = telefonoTextBox.Text
-                };
-
-                empleados.Add(nuevoEmpleado);
-
-                nombreTextBox.Text = string.Empty;
-                emailTextBox.Text = string.Empty;
-                telefonoTextBox.Text = string.Empty;
+            else if (emailBox.Text == "")
+            {
+                MessageBox.Show("El campo E-mail no puede estar vacío", "Error");
+            }
+            else if (telefonoBox.Text == "")
+            {
+                MessageBox.Show("El campo Telefono no puede estar vacío", "Error");
+            }
+            else
+            {
+                Empleado empleado = new Empleado(nombreBox.Text, apellidosBox.Text, emailBox.Text, telefonoBox.Text);
+                dataGrid.Items.Add(empleado);
             }
 
         }
-
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
 
-        
     }
 }
+
+
+
+        
+    
+
