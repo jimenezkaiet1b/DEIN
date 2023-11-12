@@ -1,0 +1,20 @@
+C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\obj\Debug\Orla de Kaiet.csproj.AssemblyReference.cache
+C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\obj\Debug\Profile.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\obj\Debug\UserControl1.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\obj\Debug\App.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\obj\Debug\Orla de Kaiet_MarkupCompile.cache
+C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\obj\Debug\Orla de Kaiet_MarkupCompile.lref
+C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\obj\Debug\MainWindow.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\bin\Debug\Orla de Kaiet.exe.config
+C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\bin\Debug\Orla de Kaiet.exe
+C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\bin\Debug\Orla de Kaiet.pdb
+C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\obj\Debug\MainWindow.baml
+C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\obj\Debug\Profile.baml
+C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\obj\Debug\UserControl1.baml
+C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\obj\Debug\Orla de Kaiet.g.resources
+C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\obj\Debug\Orla_de_Kaiet.Properties.Resources.resources
+C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\obj\Debug\Orla de Kaiet.csproj.GenerateResource.cache
+C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\obj\Debug\Orla de Kaiet.csproj.CoreCompileInputs.cache
+C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\obj\Debug\Orla de Kaiet.exe
+C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\obj\Debug\Orla de Kaiet.pdb

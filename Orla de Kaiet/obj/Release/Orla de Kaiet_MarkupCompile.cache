@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\obj\Debug\
+C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\obj\Release\
 Orla_de_Kaiet
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\kaiet\Documents\DAM\DEIN\Orla de Kaiet\App.xaml
 3-1873625012
 
-8298500912
+71140860279
 13-1505183044
 MainWindow.xaml;Profile.xaml;UserControl1.xaml;
 
-True
+False
 

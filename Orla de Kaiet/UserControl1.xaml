@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="Orla_de_Kaiet.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Orla_de_Kaiet"
+             mc:Ignorable="d" 
+             x:Name="root"
+            d:DesignHeight="450" d:DesignWidth="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="45*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical">
+            <Viewbox Height="20" MaxWidth="100" StretchDirection="DownOnly">
+                <TextBlock  FontStretch="Expanded" x:Name="LabelPuesto" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+            <Button x:Name="Persona"  MouseEnter="Persona_MouseEnter" MouseLeave="Persona_MouseLeave"  MouseDoubleClick="Persona_MouseDoubleClick" Click="Persona_Click"  UseLayoutRounding="True" Margin="15,15,15,0" BorderThickness="0" Height="40" Width="40">
+                <Button.OpacityMask>
+                    <ImageBrush ImageSource="Imagenes/AritzA.jpg" Stretch="Uniform"/>
+                </Button.OpacityMask>
+                <Button.Background>
+                    <ImageBrush Stretch="Uniform" ImageSource="{Binding Foto, ElementName=root}"/>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+        <Image Grid.Row="2" Grid.Column="0" Source="Imagenes/ordenador.png" Margin="15"/>
+
+    </Grid>
+</UserControl>
