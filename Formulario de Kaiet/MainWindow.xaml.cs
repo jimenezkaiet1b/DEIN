@@ -113,6 +113,8 @@ namespace Formulario_de_Kaiet
         }
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+            MainWindow nuevaVentana = new MainWindow();
+            nuevaVentana.Show();
             this.Close();
         }
 
