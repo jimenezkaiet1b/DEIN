@@ -27,7 +27,7 @@ namespace ConexionBBDD_de_Kaiet
         public MainWindow()
         {
             InitializeComponent();
-
+                                                                      //cambiar esto
             string miConexion = ConfigurationManager.ConnectionStrings["ConexionGestionPedidos.Properties.Settings.NorthwindConnectionString"].ConnectionString;
             miConexionsql = new SqlConnection(miConexion);
             MuestraArticulos();
