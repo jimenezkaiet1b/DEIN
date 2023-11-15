@@ -1,0 +1,15 @@
+C:\Users\alumTA\DEIN\ConexionBBDD de Kaiet\bin\Release\ConexionBBDD de Kaiet.exe.config
+C:\Users\alumTA\DEIN\ConexionBBDD de Kaiet\bin\Release\ConexionBBDD de Kaiet.exe
+C:\Users\alumTA\DEIN\ConexionBBDD de Kaiet\bin\Release\ConexionBBDD de Kaiet.pdb
+C:\Users\alumTA\DEIN\ConexionBBDD de Kaiet\obj\Release\ConexionBBDD de Kaiet.csproj.AssemblyReference.cache
+C:\Users\alumTA\DEIN\ConexionBBDD de Kaiet\obj\Release\MainWindow.g.cs
+C:\Users\alumTA\DEIN\ConexionBBDD de Kaiet\obj\Release\App.g.cs
+C:\Users\alumTA\DEIN\ConexionBBDD de Kaiet\obj\Release\ConexionBBDD de Kaiet_MarkupCompile.cache
+C:\Users\alumTA\DEIN\ConexionBBDD de Kaiet\obj\Release\ConexionBBDD de Kaiet_MarkupCompile.lref
+C:\Users\alumTA\DEIN\ConexionBBDD de Kaiet\obj\Release\MainWindow.baml
+C:\Users\alumTA\DEIN\ConexionBBDD de Kaiet\obj\Release\ConexionBBDD de Kaiet.g.resources
+C:\Users\alumTA\DEIN\ConexionBBDD de Kaiet\obj\Release\ConexionBBDD_de_Kaiet.Properties.Resources.resources
+C:\Users\alumTA\DEIN\ConexionBBDD de Kaiet\obj\Release\ConexionBBDD de Kaiet.csproj.GenerateResource.cache
+C:\Users\alumTA\DEIN\ConexionBBDD de Kaiet\obj\Release\ConexionBBDD de Kaiet.csproj.CoreCompileInputs.cache
+C:\Users\alumTA\DEIN\ConexionBBDD de Kaiet\obj\Release\ConexionBBDD de Kaiet.exe
+C:\Users\alumTA\DEIN\ConexionBBDD de Kaiet\obj\Release\ConexionBBDD de Kaiet.pdb
