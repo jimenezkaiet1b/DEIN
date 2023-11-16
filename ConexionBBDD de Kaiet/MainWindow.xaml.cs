@@ -27,29 +27,31 @@ namespace ConexionBBDD_de_Kaiet
         public MainWindow()
         {
             InitializeComponent();
-                                                                      //cambiar esto
-            string miConexion = ConfigurationManager.ConnectionStrings["ConexionGestionPedidos.Properties.Settings.NorthwindConnectionString"].ConnectionString;
+                                                                   
+            string miConexion = ConfigurationManager.ConnectionStrings["ConexionBBDD_de_Kaiet.Properties.Settings.GestorEmpleadosConnectionString"].ConnectionString;
             miConexionsql = new SqlConnection(miConexion);
             MuestraArticulos();
-
-
+            //"ConexionBBDD_de_Kaiet.Properties.Settings.GestorEmpleadosConnectionString"
+            //"ConexionGestionPedidos.Properties.Settings.NorthwindConnectionString"
 
 
 
         }
         private void MuestraArticulos() {
-            string consulta = "SELECT * FROM CLIENTES";
+            string consulta = "SELECT * FROM empleados";
             SqlDataAdapter miAdaptadorSQL = new SqlDataAdapter(consulta, miConexionsql);
-            using (miAdaptadorSQL);
+            using (miAdaptadorSQL)
+            {
 
-            DataTable articulosTabla = new DataTable();
-            miAdaptadorSQL.Fill(articulosTabla);
+                DataTable articulosTabla = new DataTable();
+                miAdaptadorSQL.Fill(articulosTabla);
 
-            listaArticulos.DisplayMemberPath = "Id";
+                listaArticulos.DisplayMemberPath = "Id";
 
-            listaArticulos.DisplayMemberPath = "nombre";
+                listaArticulos.DisplayMemberPath = "nombre";
 
-            listaArticulos.ItemsSource = articulosTabla.DefaultView;
+                listaArticulos.ItemsSource = articulosTabla.DefaultView;
+            }
         }
         
 
