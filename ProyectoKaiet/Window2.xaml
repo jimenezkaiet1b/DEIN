@@ -103,7 +103,7 @@
         </Button>
 
 
-        <Label Background="White" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" FontSize="20" Margin="10,10,50,0" Width="676" Grid.ColumnSpan="3">
+        <Label Background="White" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" FontSize="20" Margin="129,10,153,0" Width="454" Grid.ColumnSpan="3">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
                 <Button Content="Jornada" Margin="5" />
                 <Button Content="Clasificacion" Margin="5" />

@@ -66,11 +66,15 @@
         <Label Background="#02111B" Grid.Row="3" Grid.Column="1">
             <TextBlock  Text="Deporte" Foreground="White"></TextBlock>
         </Label>
-        <Label Background="#02111B" Grid.Row="3" Grid.Column="2">
+        <Label Background="#02111B" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="3">
             <TextBlock  Text="Tipos de competicion" Foreground="White"></TextBlock>
         </Label>
-        <Label Background="#02111B" Grid.Row="3" Grid.Column="3">
+        <Label Background="#02111B" Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="3">
             <TextBlock  Text="Check" Foreground="White"></TextBlock>
+        </Label>
+
+        <Label Grid.Row="4" Grid.ColumnSpan="8" Background="#C0D6DF">
+            
         </Label>
         
 
