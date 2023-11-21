@@ -12,13 +12,13 @@
             <Setter Property= "Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
-                        <Border CornerRadius="20" Background="{TemplateBinding Background}">
+                        <Border CornerRadius="15" Background="{TemplateBinding Background}">
                             <ContentPresenter HorizontalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
-            <Setter Property="FontSize" Value="32"></Setter>
+            <Setter Property="FontSize" Value="22"></Setter>
             <Setter Property="FontWeight" Value="Bold"></Setter>
             <Setter Property="VerticalAlignment" Value="Center"></Setter>
 

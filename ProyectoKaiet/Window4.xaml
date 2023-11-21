@@ -21,9 +21,9 @@
         </Grid.RowDefinitions>
 
         <Image Source="Imagenes/Logo.png" Grid.Column="1"></Image>
-        <TextBox Grid.Column="1" Grid.Row="1" Text="Usurname" Margin="34,0,0,97"></TextBox>
+        <TextBox x:Name="usurname" Grid.Column="1" Grid.Row="1" Text="Usurname" Margin="34,0,0,97"></TextBox>
         <Image Source="imagenes/account.png" Margin="0,5,235,106" Grid.Row="1" Grid.Column="1"/>
-        <TextBox Grid.Column="1" Grid.Row="2" Text="Password" Margin="34,0,0,97"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="2" x:Name="pwd" Text="Password" Margin="34,0,0,97"></TextBox>
         <Image Source="imagenes/candado.png" Margin="0,5,235,106" Grid.Row="2" Grid.Column="1"/>
         <Button  Grid.Row="2" Grid.Column="1" Margin="84,86,82,11" Click="Button_Click">LOGIN</Button>
 
