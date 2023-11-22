@@ -5,8 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoKaiet"
         mc:Ignorable="d"
-        Title="Window7" Height="450" Width="800">
+        Title="Window7" Height="450" Width="800" Background="#C0D6DF">
+
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="18"/>
+            <Setter Property="FontSize" Value="23"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontStyle" Value="Normal"/>
+            <Setter Property="Foreground" Value="Black"></Setter>
+        </Style>
+
+    </Window.Resources>
+    
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+
+        <TextBlock Text="INFORMACION DE TORNEO" FontWeight="Heavy" HorizontalAlignment="Center"  Grid.Column="1" Grid.ColumnSpan="2"/>
+         <Separator Grid.ColumnSpan="5"  Background="Gray"   Margin="0,20,0,0"/>
+
+        <TextBlock Grid.Row="1" Text="DATOS DEL RESPONSABLE" Grid.ColumnSpan="2" FontWeight="SemiBold"></TextBlock>
+        <Separator  Background="Black" Grid.Row="1" Grid.ColumnSpan="2"   Margin="0,0,117,0"/>
+        
+        <TextBlock Grid.Row="1" Text="TORNEO" Grid.ColumnSpan="2" FontWeight="SemiBold" Grid.Column="2"></TextBlock>
+        <Separator  Background="Black" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2"   Margin="0,0,117,0"/>
+
+
+
+
+
     </Grid>
 </Window>

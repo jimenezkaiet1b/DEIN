@@ -5,8 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoKaiet"
         mc:Ignorable="d"
-        Title="Window8" Height="450" Width="800">
+        Title="Window8" Height="450" Width="800" Background="#C0D6DF">
+
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="18"/>
+            <Setter Property="FontSize" Value="23"/>
+            <Setter Property="FontWeight" Value="Heavy"/>
+            <Setter Property="FontStyle" Value="Normal"/>
+            <Setter Property="Foreground" Value="Black"></Setter>
+        </Style>
+        <Style TargetType="Separator">
+            <Setter Property="Background" Value="Black"></Setter>
+        </Style>
+
+    </Window.Resources>
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="JORNADA" HorizontalAlignment="Center" Grid.Column="1" RenderTransformOrigin="0.537,0.779" Margin="74,0" ></TextBlock>
+        <Separator Grid.ColumnSpan="3" Margin="0,2,0,54" Grid.RowSpan="2"/>
+
+        <TextBlock Text="Viernes" FontSize="16" Grid.Row="1" Margin="40,0,0,0"/>
+        <Label Grid.Row="1"  Margin="40,10,0,0">1 oct</Label>
+        <Separator Grid.Row="1" Margin="40,10,0,2"></Separator>
+        <TextBlock Text="NOMBRE" FontWeight="Normal" Grid.Row="1" FontSize="15" Margin="40,43,0,60" Grid.RowSpan="2"></TextBlock>
+
+
+
     </Grid>
 </Window>
