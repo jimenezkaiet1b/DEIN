@@ -44,7 +44,7 @@
         <Button Grid.Column="6" Background="Black" Foreground="White" FontSize="16" Height="21" Margin="17,9" Width="65">Exportar</Button>
         <Button Grid.Column="7" Background="Black" Foreground="White" FontSize="16" Height="21" Margin="19,9" Width="61">Agregar</Button>
 
-        <Border Grid.Row="1" BorderBrush="Gray" BorderThickness="1">
+        <Border Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" BorderBrush="Gray" BorderThickness="1" VerticalAlignment="Center" Height="34" Margin="0,21" >
             <Button  >
                 <Image>
                     <Image.Source>
@@ -54,7 +54,7 @@
             </Button>
         </Border>
 
-        <Border Grid.Column="7" Grid.Row="1">
+        <Border Grid.Column="7" Grid.Row="1" Grid.RowSpan="2" BorderBrush="Gray" BorderThickness="1" VerticalAlignment="Center" Height="34" Margin="0,21" >
             <Button>
                 <Image Source="Imaagenes/flechaDere.png"/>
             </Button>
@@ -74,9 +74,29 @@
         </Label>
 
         <Label Grid.Row="4" Grid.ColumnSpan="8" Background="#C0D6DF">
-            
+
         </Label>
-        
+
+        <Label Grid.Row="5" Grid.ColumnSpan="8" Background="#FFFFFF">
+
+        </Label>
+
+        <Label Grid.Row="6" Grid.ColumnSpan="8" Background="#C0D6DF">
+
+        </Label>
+        <Label Grid.Row="7" Grid.ColumnSpan="8" Background="#FFFFFF">
+
+        </Label>
+        <Label Grid.Row="8" Grid.ColumnSpan="8" Background="#C0D6DF">
+
+        </Label>
+        <Label Grid.Row="9" Grid.ColumnSpan="8" Background="#FFFFFF">
+
+        </Label>
+        <Label Grid.Row="10" Grid.ColumnSpan="8" Background="#C0D6DF">
+
+        </Label>
+
 
 
 
