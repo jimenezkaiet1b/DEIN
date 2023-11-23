@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="Window10" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Equipos" FontSize="24" Grid.Row="0" HorizontalAlignment="Center"/>
+        <ListView x:Name="EquiposListView" Grid.Row="1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Nombre" Width="100" DisplayMemberBinding="{Binding Nombre}"/>
+                    <GridViewColumn Header="Puntos Jugados" Width="100" DisplayMemberBinding="{Binding PuntosJugados}"/>
+                    <GridViewColumn Header="Puntos Ganados" Width="100" DisplayMemberBinding="{Binding PuntosGanados}"/>
+                    <GridViewColumn Header="Goles" Width="100" DisplayMemberBinding="{Binding Goles}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Window>

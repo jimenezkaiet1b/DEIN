@@ -22,6 +22,23 @@ namespace ProyectoKaiet
         public Window10()
         {
             InitializeComponent();
+
+            List<Equipo> equipos = new List<Equipo>
+            {
+                new Equipo { Nombre = "Equipo 1", PuntosJugados = 5075, PuntosGanados = 5075, Goles = "12:2" },
+                new Equipo { Nombre = "Equipo 2", PuntosJugados = 5075, PuntosGanados = 5075, Goles = "12:2" },
+               
+            };
+
+            EquiposListView.ItemsSource = equipos;
         }
+    }
+
+    public class Equipo
+    {
+        public string Nombre { get; set; }
+        public int PuntosJugados { get; set; }
+        public int PuntosGanados { get; set; }
+        public string Goles { get; set; }
     }
 }

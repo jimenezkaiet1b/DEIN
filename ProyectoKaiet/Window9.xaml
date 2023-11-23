@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoKaiet"
         mc:Ignorable="d"
-        Title="Window9" Height="450" Width="800">
+        Title="Window9" Height="450" Width="800" Background="#272635">
+
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label  HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="404" FontSize="60" Foreground="White" Height="174"></TextBlock>
+        </Label>
+        <TextBlock Text="ERROR NOT FOUND" FontSize="40" Foreground="White" Margin="216,199,218,170" HorizontalAlignment="Center"></TextBlock>
+        <Button Content="Recargar" Height="35" Margin="350,316,350,68"></Button>
+
+
     </Grid>
 </Window>
