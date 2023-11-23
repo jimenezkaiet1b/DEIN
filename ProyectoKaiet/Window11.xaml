@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoKaiet"
         mc:Ignorable="d"
-        Title="Window11" Height="450" Width="800">
+        Title="Window11" Height="450" Width="800" Background="#C0D6DF">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="CALENDARIO" FontSize="15" FontWeight="Heavy" Width="102" HorizontalAlignment="Center" Margin="346,0,344,0" />
+
+        <Separator Margin="0,2,0,355"  Width="792" Grid.RowSpan="2" />
+
+
+        <TextBlock x:Name="TitleTextBlock" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"/>
+
+        <Calendar x:Name="CalendarControl" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="166" Margin="306,74,306,147"/>
+
+
+        <Button Content="Atras" Height="34" Margin="369,258,369,95" Grid.Row="1"/>
     </Grid>
 </Window>

@@ -22,6 +22,18 @@ namespace ProyectoKaiet
         public Window11()
         {
             InitializeComponent();
+            SetTitle();
+            CalendarControl.DisplayDateChanged += CalendarControl_DisplayDateChanged;
+        }
+        private void SetTitle()
+        {
+            DateTime date = DateTime.Today;
+            TitleTextBlock.Text = date.ToString("MMMM yyyy");
+        }
+
+        private void CalendarControl_DisplayDateChanged(object sender, CalendarDateChangedEventArgs e)
+        {
+            SetTitle();
         }
     }
 }
