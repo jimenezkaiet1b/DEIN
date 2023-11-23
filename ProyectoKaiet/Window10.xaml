@@ -8,11 +8,12 @@
         Title="Clasificacion" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" MinHeight="60"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Equipos" FontSize="24" Grid.Row="0" HorizontalAlignment="Center"/>
-        <ListView x:Name="EquiposListView" Grid.Row="1">
+        <TextBlock Text="Equipos" FontSize="24" Grid.Row="0" HorizontalAlignment="Center" Margin="354,0" Width="84"/>
+        <Separator Margin="0,2,0,339" Grid.RowSpan="2" ></Separator>
+        <ListView x:Name="EquiposListView" Grid.Row="1" Margin="191,40,196,15" HorizontalAlignment="Center" Width="405">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Nombre" Width="100" DisplayMemberBinding="{Binding Nombre}"/>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoKaiet"
         mc:Ignorable="d"
-        Title="Window11" Height="450" Width="800" Background="#C0D6DF">
+        Title="Calendario" Height="450" Width="800" Background="#C0D6DF">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -23,5 +23,29 @@
 
 
         <Button Content="Atras" Height="34" Margin="369,258,369,95" Grid.Row="1"/>
+
+        <Grid Grid.Row="4" Grid.Column="1" Margin="0,10,0,0">
+            <Label Background="White"  HorizontalAlignment="Center" FontSize="10" Margin="272,342,270,0" RenderTransformOrigin="0.508,0.818"  >
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" >
+                    <Button FontSize="10" Content="Jornada" Margin="5" Width="50" Height="20" />
+                    <Button  FontSize="10" Content="Clasificacion" Margin="5" Width="50" Height="20" />
+                    <Button  FontSize="10" Content="Equipos"  IsEnabled="False" Margin="5" Width="50" Height="20" />
+                    <Button  FontSize="10" Content="Calendario" Margin="5" Click="Button_Click" Width="50" Height="20" />
+                </StackPanel>
+            </Label>
+        </Grid>
+        
+        <Border Background="#C0D6DF" VerticalAlignment="Center" Height="32" Margin="0,0,721,0" >
+            <Button Background="#C0D6DF" 
+                   Width="71" Height="32">
+                <Image Height="29">
+                    <Image.Source>
+                        <BitmapImage UriSource="Imaagenes/flechaDere.png"  Rotation="Rotate180" />
+                    </Image.Source>
+                </Image>
+            </Button>
+        </Border>
     </Grid>
+
+
 </Window>

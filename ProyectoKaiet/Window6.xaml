@@ -73,17 +73,39 @@
             <TextBlock  Text="Check" Foreground="White"></TextBlock>
         </Label>
 
-        <Label Grid.Row="4" Grid.ColumnSpan="8" Background="#C0D6DF">
-
-        </Label>
+        <Label Grid.Row="4" Grid.ColumnSpan="8" Background="#C0D6DF"></Label>
+        <ComboBox Grid.Row="4" Grid.Column="1">
+            <ComboBoxItem Content="Boxeo"></ComboBoxItem>
+            <ComboBoxItem Content="Futbol"></ComboBoxItem>
+            <ComboBoxItem Content="Tennis"></ComboBoxItem>
+            <ComboBoxItem Content="Baloncesto"></ComboBoxItem>
+            <ComboBoxItem Content="Rugby"></ComboBoxItem>
+        </ComboBox>
 
         <Label Grid.Row="5" Grid.ColumnSpan="8" Background="#FFFFFF">
 
         </Label>
+        <ComboBox Grid.Row="4" Grid.Column="2">
+            <ComboBoxItem Content="Ligas"></ComboBoxItem>
+            <ComboBoxItem Content="PlayOffs"></ComboBoxItem>
+            <ComboBoxItem Content="Campeonato"></ComboBoxItem>
+            <ComboBoxItem Content="Otro"></ComboBoxItem>
+
+        </ComboBox>
+
 
         <Label Grid.Row="6" Grid.ColumnSpan="8" Background="#C0D6DF">
 
         </Label>
+
+        <CheckBox Grid.Row="5" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center"></CheckBox>
+        <CheckBox Grid.Row="6" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center"></CheckBox>
+        <CheckBox Grid.Row="7" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center"></CheckBox>
+        <CheckBox Grid.Row="8" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center"></CheckBox>
+        <CheckBox Grid.Row="9" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center"></CheckBox>
+        <CheckBox Grid.Row="10" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center"></CheckBox>
+        <CheckBox Grid.Row="11" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center"></CheckBox>
+
         <Label Grid.Row="7" Grid.ColumnSpan="8" Background="#FFFFFF">
 
         </Label>
