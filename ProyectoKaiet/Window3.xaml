@@ -35,9 +35,10 @@
         <TextBlock Text="CREADOR DE TORNEOS" FontSize="20" Grid.Column="1" HorizontalAlignment="Center"></TextBlock>
         <TextBlock Text="TORNEO NUEVO" Grid.Column="1" Grid.Row="1"></TextBlock>
         <TextBlock Text="Nombre del Torneo"  Grid.Column="1" Grid.Row="2"></TextBlock>
-        <TextBox Grid.Row="2" Grid.Column="1" Text="Nombre" Margin="0,32,0,28" Background="Gray"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="Nombre" Margin="0,32,0,28" Background="White"></TextBox>
         <TextBlock Text="Fecha"  Grid.Column="1" Grid.Row="3"></TextBlock>
-        <TextBox Grid.Row="3" Grid.Column="1" Text="Introduzca la fecha" Margin="0,30" Background="Gray"/>
+        
+        <DatePicker Grid.Row="3" Grid.Column="1" VerticalAlignment="Center"/>
 
         <Button Grid.Column="1" Grid.Row="4" Background="Aqua" Foreground="White" Click="Button_Click">SIGUIENTE</Button>
     </Grid>

@@ -11,7 +11,7 @@
             <RowDefinition Height="Auto" MinHeight="60"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Equipos" FontSize="24" Grid.Row="0" HorizontalAlignment="Center" Margin="354,0" Width="84"/>
+        <TextBlock Text="CLASIFICACION" FontSize="24" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="320,0,306,0" Width="166"/>
         <Separator Margin="0,2,0,339" Grid.RowSpan="2" ></Separator>
         <ListView x:Name="EquiposListView" Grid.Row="1" Margin="191,40,196,15" HorizontalAlignment="Center" Width="405">
             <ListView.View>

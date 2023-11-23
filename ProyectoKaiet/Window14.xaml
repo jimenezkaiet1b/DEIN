@@ -5,8 +5,49 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoKaiet"
         mc:Ignorable="d"
-        Title="Window14" Height="450" Width="800">
+        Title="Window14" Height="450" Width="800" Background="#02111B">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="18"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontStyle" Value="Normal"/>
+            <Setter Property="Foreground" Value="White"></Setter>
+        </Style>
+
+    </Window.Resources>
+
     <Grid>
-        
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="CREADOR DE TORNEOS" FontSize="20" Grid.Column="1" HorizontalAlignment="Center" ></TextBlock>
+
+        <TextBlock Text="Guarda tu torneo"  Grid.Column="1" Grid.Row="1" FontSize="18"></TextBlock>
+        <TextBlock Text="Esto le permite agregar equipos, crear calendarios  &#x0a; y presentar su torneo"  Grid.Column="1" Grid.Row="1" Margin="0,33,0,0" FontWeight="Light" ></TextBlock>
+
+
+        <TextBlock Text="Primer nombre (opcional)"  Grid.Column="1" Grid.Row="2" FontSize="15" FontWeight="Light"></TextBlock>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="Introduce una division" Margin="0,30,80,20" Background="White"/>
+
+        <TextBlock Text="Email"  Grid.Column="1" Grid.Row="3" FontSize="15" FontWeight="Light"></TextBlock>
+        <TextBox Grid.Row="3" Grid.Column="1" Text="Introduce el Email" Margin="0,30,80,20" Background="White"/>
+
+        <TextBlock Text="Password"  Grid.Column="1" Grid.Row="4" FontSize="15" FontWeight="Light"></TextBlock>
+        <TextBox Grid.Row="4" Grid.Column="1" Text="Introduce la contraseña" Margin="0,30,80,21" Background="White"/>
+
+        <Button Grid.Column="1" Grid.Row="5" Background="#1294F2" Foreground="White" Click="Button_Click" Margin="24,27,171,16" Height="27">ATRAS</Button>
+        <Button Grid.Column="1" Grid.Row="5" Background="#1294F2" Foreground="White" Click="Button_Click" Margin="128,27,24,16" Height="27">SIGUIENTE</Button>
     </Grid>
 </Window>

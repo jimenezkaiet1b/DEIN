@@ -57,11 +57,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="MultiDeportesDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MultiDeportesDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Window10.xaml.cs">
       <DependentUpon>Window10.xaml</DependentUpon>
     </Compile>
@@ -198,17 +193,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="MultiDeportesDataSet.xsc">
-      <DependentUpon>MultiDeportesDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="MultiDeportesDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>MultiDeportesDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="MultiDeportesDataSet.xss">
-      <DependentUpon>MultiDeportesDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
