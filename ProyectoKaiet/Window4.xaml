@@ -19,13 +19,22 @@
             <RowDefinition></RowDefinition>
 
         </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1" Margin="10,0">
+            <Image Source="imaagenes/account.png" Margin="0,10,10,100" Width="25"/>
+            <TextBox Grid.Column="1" Grid.Row="1" x:Name="pwd" Text="Password" Margin="10,10,0,100" Width="150" />
+        </StackPanel>
 
-        <Image Source="Imagenes/Logo.png" Grid.Column="1"></Image>
-        <TextBox x:Name="usurname" Grid.Column="1" Grid.Row="1" Text="Usurname" Margin="34,0,0,106"></TextBox>
-        <Image Source="imagenes/account.png" Margin="0,5,235,106" Grid.Row="1" Grid.Column="1"/>
-        <TextBox Grid.Column="1" Grid.Row="2" x:Name="pwd" Text="Password" Margin="34,0,0,106" ></TextBox>
-        <Image Source="imagenes/candado.png" Margin="0,5,235,106" Grid.Row="2" Grid.Column="1"/>
-        <Button  Grid.Row="2" Grid.Column="1" Margin="84,86,82,11" Click="Button_Click">LOGIN</Button>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1" Margin="10,64,0,73" Grid.RowSpan="2">
+            <Image Source="imaagenes/candado.png" Margin="0,0,10,117" Grid.Row="2" Grid.Column="1" Width="25"/>
+            <TextBox x:Name="usurname"  Text="Usurname" Margin="10,0,0,117" Width="150"></TextBox>
+        </StackPanel>
+
+
+        <Image Source="Imaagenes/Logo.jpg" Grid.Column="1"></Image>
+
+
+        <Button  Margin="78,44,86,56" Click="Button_Click" Height="40" Width="100" Grid.Column="1" Grid.Row="2" >LOGIN</Button>
+
 
 
     </Grid>

@@ -49,19 +49,19 @@
         <Separator  Background="black" Grid.Row="0" Grid.ColumnSpan="4"  Margin="0,20,0,0"/>
 
         <StackPanel  Grid.Row="1" Grid.Column="0">
-            <Image Source="Imagenes\ajustes.png" Height="15" ></Image>
+            <Image Source="Imaagenes\ajuste.png" Height="15" ></Image>
             <TextBlock Text="Ajustes" HorizontalAlignment="Center" />
         </StackPanel>
         <StackPanel  Grid.Row="2" Grid.Column="0">
-            <Image Source="Imagenes\informacion.png" Height="15" ></Image>
+            <Image Source="Imaagenes\info.png" Height="15" ></Image>
             <TextBlock Text="Informacion" HorizontalAlignment="Center" />
         </StackPanel>
         <StackPanel  Grid.Row="3" Grid.Column="0">
-            <Image Source="Imagenes\Camiseta.png" Height="15" ></Image>
+            <Image Source="Imaagenes\menu.png" Height="15" ></Image>
             <TextBlock Text="Menu" HorizontalAlignment="Center" />
         </StackPanel>
         <StackPanel  Grid.Row="4" Grid.Column="0">
-            <Image Source="Imagenes\Calendario.png" Height="15" />
+            <Image Source="Imaagenes\Calendario.png" Height="15" />
             <TextBlock Text="Calendario" HorizontalAlignment="Center" />
         </StackPanel>
 
@@ -83,14 +83,19 @@
         <Label Grid.Row="4" Grid.Column="2" HorizontalAlignment="Center" FontSize="20" Margin="64,0" Width="117">
             <TextBlock>Localizacion</TextBlock>
         </Label>
-        <Label Grid.Row="4" Grid.Column="3" HorizontalAlignment="Center" FontSize="20" Margin="73,0" Width="99">
-            <TextBlock>Divisiones</TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="3" Text="Divisiones" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <Label Background="White"  HorizontalAlignment="Center" FontSize="20"  Grid.Column="3" Grid.Row="5" Margin="57,0,56,99">
+            <TextBox Text="Escriba la localizacion" FontSize="10" SpellCheck.IsEnabled="True" TextWrapping="Wrap" Height="17" Width="122" />
         </Label>
-        <Label Background="white" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" FontSize="20" Margin="68,0,68,81" Width="110">
-            <TextBlock>Drop down</TextBlock>
-        </Label>
-        <Label Background="white" Grid.Row="5" Grid.Column="2" HorizontalAlignment="Center" FontSize="20" Margin="76,0,76,81" Width="93">
-            <TextBlock>Dirección</TextBlock>
+
+        <ComboBox  Grid.Row="5" Grid.Column="1" Margin="73,0,61,99">
+            <ComboBoxItem Content="Jornada 1" ></ComboBoxItem>
+            <ComboBoxItem Content="Jornada 2"></ComboBoxItem>
+            <ComboBoxItem Content="Jornada 3"></ComboBoxItem>
+            <ComboBoxItem Content="Todas las Jornadas"></ComboBoxItem>
+        </ComboBox>
+        <Label Background="white" Grid.Row="5" Grid.Column="2" HorizontalAlignment="Center" FontSize="20" Margin="34,0,34,99" Width="177">
+            <TextBox Text="Escriba la localizacion" FontSize="10" Width="167" SpellCheck.IsEnabled="True" TextWrapping="Wrap"></TextBox>
         </Label>
         <Button  Grid.Row="6" Grid.Column="1" >
             <TextBlock>Ver</TextBlock>

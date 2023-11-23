@@ -38,7 +38,7 @@
 
 
         <TextBlock Text="Lugar"  Grid.Column="1" Grid.Row="2"></TextBlock>
-        <TextBox Grid.Row="2" Grid.Column="1" Text="Introduce un lugar" Margin="0,30" Background="Gray"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="Introduce un lugar" Margin="0,30" Background="White"/>
         <TextBlock Grid.Column="1" Grid.Row="3" FontWeight="Light" VerticalAlignment="Center" Text="Es un torneo online (eSports)"></TextBlock>
         <CheckBox Grid.Row="3"  Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,35" Width="33"></CheckBox>
 

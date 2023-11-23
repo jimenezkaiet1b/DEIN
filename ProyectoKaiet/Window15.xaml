@@ -5,9 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoKaiet"
         mc:Ignorable="d"
-        Title="Window15" Height="450" Width="800">
+        Title="Window15" Height="600" Width="800" Background="#C0D6DF">
     <Grid>
-        
-        
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Height="576" Margin="0,0,0,-7" Width="792">
+            <TextBlock Text="SOBRE NOSOTROS" FontWeight="Heavy" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+            <Separator Background="Gray" Margin="0,0,0,10" />
+            <TextBlock Text="¡Organiza, Gestionam Triunfa !" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+            <Image Source="Imaagenes/logo.jpg" Margin="0,0,0,10" Height="137"/>
+            <Label x:Name="lblEmail" Content="Email" Width="39"/>
+            <TextBox x:Name="txtEmail" Width="339"/>
+            <Label x:Name="lblTelefono" Content="Telefono" Width="56"/>
+            <TextBox x:Name="txtTelefono" Width="339"/>
+            <Label x:Name="lblTitulo" Content="Titulo" Width="41"/>
+            <TextBox x:Name="txtTitulo" Width="339"/>
+            <Label x:Name="lblAsunto" Content="Asunto" Width="49"/>
+            <TextBox x:Name="txtAsunto" Width="339" Margin="0,0,0,20"/>
+            <Button x:Name="btnEnviar" Content="Enviar" Width="75" Height="31" Margin="0,0,0,20"/>
+            <Button x:Name="btnCancelar" Content="Cancelar" Width="108" Height="31" Margin="342,0"/>
+        </StackPanel>
+
     </Grid>
 </Window>

@@ -17,7 +17,7 @@
         </Style>
 
     </Window.Resources>
-    
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -25,7 +25,7 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        
+
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -36,12 +36,29 @@
 
 
         <TextBlock Text="INFORMACION DE TORNEO" FontWeight="Heavy" HorizontalAlignment="Center"  Grid.Column="1" Grid.ColumnSpan="2"/>
-         <Separator Grid.ColumnSpan="5"  Background="Gray"   Margin="0,20,0,0"/>
+        <Separator Grid.ColumnSpan="5"  Background="Gray"   Margin="0,20,0,0"/>
 
-        <TextBlock Grid.Row="1" Text="DATOS DEL RESPONSABLE" Grid.ColumnSpan="2" FontWeight="SemiBold"></TextBlock>
-        <Separator  Background="Black" Grid.Row="1" Grid.ColumnSpan="2"   Margin="0,0,117,0"/>
-        
+        <TextBlock Grid.Row="1" Text="DATOS DEL RESPONSABLE" Grid.ColumnSpan="2" FontWeight="SemiBold" Margin="20,0,0,0"></TextBlock>
+        <Separator  Background="Black" Grid.Row="1" Grid.ColumnSpan="2"   Margin="20,0,117,0"/>
+
+        <TextBlock Text="Nombre de la organizacion:" FontSize="12" Margin="20,60,0,0" Grid.Row="1"/>
+        <TextBlock Text="Contacto: " FontSize="12" Margin="20,0,0,68" Grid.Row="2"/>
+        <TextBlock Text="Redes sociales: " FontSize="12" Margin="20,20,0,47" Grid.Row="2"/>
+        <TextBlock Text="Personal clave: " FontSize="12" Margin="20,41,0,25" Grid.Row="2"/>
+        <TextBlock Text="Patrocinadores: " FontSize="12" Margin="20,63,0,10" Grid.Row="2"/>
+        <TextBlock Text="El Torneo de Boxeo Campeones de Acero es un emocionante evento  &#x0a; que reúne a algunos de los mejores pugilistas de todo el mundo  &#x0a; para competir en una serie de combates épicos. Este torneo se centra en el boxeo profesional  &#x0a; y atrae a una multitud apasionada de fanáticos que ansían la emoción y la destreza de los  &#x0a; boxeadores en el cuadrilátero. En Campeones de Acero, los púgiles compiten en diversas categorías de peso,  &#x0a; desde el peso pluma hasta el peso pesado, cada uno luchando por demostrar  &#x0a; su valía y avanzar en el torneo. &#x0a;
+    Las reglas siguen las pautas establecidas en el boxeo profesional, permitiendo una amplia variedad de tácticas y movimientos, aunque se prohíben golpes ilegales, como golpes bajos o cabezazos. El torneo se desarrolla en formato de eliminación simple, donde los competidores se enfrentan en emocionantes combates a lo largo de varias rondas. &#x0a;
+    Cada combate consta de varios asaltos, con descansos entre ellos, y el ganador avanza a la siguiente fase del torneo. Los combates se deciden por puntuación o por nocaut, lo que agrega una dosis adicional de emoción a cada enfrentamiento. &#x0a;
+    Campeones de Acero no solo es una competencia deportiva, sino también un espectáculo que celebra la habilidad, el coraje y la determinación de los boxeadores. Los fanáticos pueden disfrutar de una experiencia inolvidable mientras animan a sus favoritos y se sumergen en el mundo del boxeo de alto nivel." Grid.Column="2" Grid.Row="1" Margin="0,60,28,0" Grid.RowSpan="3" Grid.ColumnSpan="2" FontSize="12">
+
+        </TextBlock>
+
+
+
         <TextBlock Grid.Row="1" Text="TORNEO" Grid.ColumnSpan="2" FontWeight="SemiBold" Grid.Column="2"></TextBlock>
+
+
+
         <Separator  Background="Black" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2"   Margin="0,0,117,0"/>
 
 
