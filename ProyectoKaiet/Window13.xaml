@@ -42,7 +42,7 @@
         <TextBlock Grid.Column="1" Grid.Row="3" FontWeight="Light" VerticalAlignment="Center" Text="Es un torneo online (eSports)"></TextBlock>
         <CheckBox Grid.Row="3"  Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,35" Width="33"></CheckBox>
 
-        <Button Grid.Column="1" Grid.Row="4" Background="#1294F2" Foreground="White" Click="ButtonAtras_Click" Margin="24,27,171,27">ATRAS</Button>
-        <Button Grid.Column="1" Grid.Row="4" Background="#1294F2" Foreground="White" Click="ButtonSiguiente_Click" Margin="128,27,24,27">SIGUIENTE</Button>
+        <Button Grid.Column="1" Grid.Row="4" Background="#1294F2" Foreground="White" Click="ButtonAtras_Click" Margin="24,27,171,27" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave">ATRAS</Button>
+        <Button Grid.Column="1" Grid.Row="4" Background="#1294F2" Foreground="White" Click="ButtonSiguiente_Click" Margin="128,27,24,27" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave">SIGUIENTE</Button>
     </Grid>
 </Window>

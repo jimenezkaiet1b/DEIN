@@ -40,9 +40,9 @@
             <TextBlock Text="INSCRIPCIONES DE LOS TORNEOS"  FontSize="24" FontWeight="UltraBlack" ></TextBlock>
 
         </Border>
-        <Button Grid.Column="5" Background="Black" Foreground="White" FontSize="16" Height="21" Margin="16,9" Width="67">Importar</Button>
-        <Button Grid.Column="6" Background="Black" Foreground="White" FontSize="16" Height="21" Margin="17,9" Width="65">Exportar</Button>
-        <Button Grid.Column="7" Background="Black" Foreground="White" FontSize="16" Height="21" Margin="19,9" Width="61">Agregar</Button>
+        <Button Grid.Column="5" Background="Black" Foreground="White" FontSize="16" Height="21" Margin="16,9" Width="67" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave">Importar</Button>
+        <Button Grid.Column="6" Background="Black" Foreground="White" FontSize="16" Height="21" Margin="17,9" Width="65" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave">Exportar</Button>
+        <Button Grid.Column="7" Background="Black" Foreground="White" FontSize="16" Height="21" Margin="19,9" Width="61" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave">Agregar</Button>
 
         <Border Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" BorderBrush="Gray" BorderThickness="1" VerticalAlignment="Center" Height="34" Margin="0,21" >
             <Button Click="ButtonAtras_Click" Margin="33,0,32,0" VerticalAlignment="Bottom" >

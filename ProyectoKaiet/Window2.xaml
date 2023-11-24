@@ -99,10 +99,10 @@
         <Label Background="white" Grid.Row="5" Grid.Column="2" HorizontalAlignment="Center" FontSize="20" Margin="34,0,34,99" Width="177">
             <TextBox Text="Escriba la localizacion" FontSize="10" Width="167" SpellCheck.IsEnabled="True" TextWrapping="Wrap"></TextBox>
         </Label>
-        <Button  Grid.Row="6" Grid.Column="1"  Click="ButtonLocaJornada_Click" >
+        <Button  Grid.Row="6" Grid.Column="1"  Click="ButtonLocaJornada_Click" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" >
             <TextBlock>Ver</TextBlock>
         </Button>
-        <Button Grid.Row="6" Grid.Column="2" Click="ButtonLoca_Click" >
+        <Button Grid.Row="6" Grid.Column="2" Click="ButtonLoca_Click" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" >
             <TextBlock>Anadir</TextBlock>
         </Button>
 

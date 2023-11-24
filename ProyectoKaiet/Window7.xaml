@@ -61,6 +61,8 @@
 
         <Separator  Background="Black" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2"   Margin="0,0,117,0"/>
 
+        <Button Grid.Column="1" Grid.Row="4" Background="#1294F2" Foreground="White" Click="ButtonAtras_Click" Margin="0,27" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Width="396" Grid.ColumnSpan="2">ATRAS</Button>
+
 
 
 

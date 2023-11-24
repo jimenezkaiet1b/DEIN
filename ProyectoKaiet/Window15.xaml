@@ -20,8 +20,8 @@
             <TextBox x:Name="txtTitulo" Width="339"/>
             <Label x:Name="lblAsunto" Content="Asunto" Width="49"/>
             <TextBox x:Name="txtAsunto" Width="339" Margin="0,0,0,20"/>
-            <Button x:Name="btnEnviar" Content="Enviar" Width="75" Height="31" Margin="0,0,0,20" Click="btnEnviar_Click"/>
-            <Button x:Name="btnCancelar" Content="Cancelar" Width="108" Height="31" Margin="342,0" Click="btnCancelar_Click"/>
+            <Button x:Name="btnEnviar" Content="Enviar" Width="75" Height="31" Margin="0,0,0,20" Click="btnEnviar_Click" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave"/>
+            <Button x:Name="btnCancelar" Content="Cancelar" Width="108" Height="31" Margin="342,0" Click="btnCancelar_Click" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave"/>
 
         </StackPanel>
 

@@ -38,7 +38,7 @@
         <Image Source="Imaagenes/Logo.jpg" Grid.Column="1"></Image>
 
 
-        <Button  Margin="78,44,86,56" Click="ButtonLogin_Click" Height="40" Width="100" Grid.Column="1" Grid.Row="2" >LOGIN</Button>
+        <Button  Margin="78,44,86,56" Click="ButtonLogin_Click" Height="40" Width="100" Grid.Column="1" Grid.Row="2"  MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" >LOGIN</Button>
 
 
 

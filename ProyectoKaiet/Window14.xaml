@@ -47,7 +47,7 @@
         <TextBlock Text="Password"  Grid.Column="1" Grid.Row="4" FontSize="15" FontWeight="Light"></TextBlock>
         <TextBox Grid.Row="4" Grid.Column="1" Text="Introduce la contraseña" Margin="0,30,80,21" Background="White"/>
 
-        <Button Grid.Column="1" Grid.Row="5" Background="#1294F2" Foreground="White" Click="ButtonAtras_Click" Margin="24,27,171,16" Height="27">ATRAS</Button>
-        <Button Grid.Column="1" Grid.Row="5" Background="#1294F2" Foreground="White" Click="ButtonSiguiente_Click" Margin="128,27,24,16" Height="27">SIGUIENTE</Button>
+        <Button Grid.Column="1" Grid.Row="5" Background="#1294F2" Foreground="White" Click="ButtonAtras_Click" Margin="24,27,171,16" Height="27" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave">ATRAS</Button>
+        <Button Grid.Column="1" Grid.Row="5" Background="#1294F2" Foreground="White" Click="ButtonSiguiente_Click" Margin="128,27,24,16" Height="27" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave">SIGUIENTE</Button>
     </Grid>
 </Window>

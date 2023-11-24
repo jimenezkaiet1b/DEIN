@@ -23,5 +23,27 @@ namespace ProyectoKaiet
         {
             InitializeComponent();
         }
+
+        private void ButtonAtras_Click(object sender, RoutedEventArgs e) {
+            Window2 window2 = new Window2();
+            window2.Show();
+            window2.Close();
+        }
+        private void Button_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            if (sender is Button button)
+            {
+                
+                button.Background = Brushes.Blue;
+            }
+        }
+
+        private void Button_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            if (sender is Button button)
+            {
+                button.Background = Brushes.LightBlue;
+            }
+        }
     }
 }
