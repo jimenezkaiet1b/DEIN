@@ -8,6 +8,15 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imaagenes/account.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imaagenes/icons8-close-32.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imaagenes/icons8-copy-32.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imaagenes/icons8-cut-32.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imaagenes/icons8-delete-32.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imaagenes/icons8-new-file-32.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imaagenes/icons8-open-file-32.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imaagenes/icons8-paste-32.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imaagenes/icons8-print-32.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imaagenes/icons8-save-32.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("imaagenes/icons8-save-as-32.png")]
 
 

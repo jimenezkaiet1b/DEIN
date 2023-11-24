@@ -20,9 +20,11 @@ namespace ProyectoKaiet
     /// </summary>
     public partial class MainWindow : Window
     {
+        public UserControl MyUserControl { get; } = new UserControl();
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent(); 
+            DataContext = this;
         }
         private void bttCrearTorneo_Click(object sender, RoutedEventArgs e)
         {

@@ -22,9 +22,9 @@ namespace ProyectoKaiet
     /// </summary>
     public partial class Window5 : Window
     {
-        SqlConnection miConexionsql;
         public Window5()
         {
+            InitializeComponent();
 
         }
     }

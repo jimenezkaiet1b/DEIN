@@ -57,6 +57,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="UserControl1.xaml.cs">
+      <DependentUpon>UserControl1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Window10.xaml.cs">
       <DependentUpon>Window10.xaml</DependentUpon>
     </Compile>
@@ -114,6 +117,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UserControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Window10.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -193,6 +200,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Imaagenes\torneo.avif" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -209,6 +217,51 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Imaagenes\flechaDere.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imaagenes\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imaagenes\copa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imaagenes\torneo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imaagenes\fav.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imaagenes\ajuste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imaagenes\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imaagenes\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imaagenes\calendario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imaagenes\candado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imaagenes\account.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imaagenes\account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imaagenes\icons8-close-32.png" />
+    <Resource Include="Imaagenes\icons8-copy-32.png" />
+    <Resource Include="Imaagenes\icons8-cut-32.png" />
+    <Resource Include="Imaagenes\icons8-delete-32.png" />
+    <Resource Include="Imaagenes\icons8-new-file-32.png" />
+    <Resource Include="Imaagenes\icons8-open-file-32.png" />
+    <Resource Include="Imaagenes\icons8-paste-32.png" />
+    <Resource Include="Imaagenes\icons8-print-32.png" />
+    <Resource Include="Imaagenes\icons8-save-32.png" />
+    <Resource Include="Imaagenes\icons8-save-as-32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

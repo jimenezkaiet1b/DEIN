@@ -22,37 +22,17 @@ namespace ProyectoKaiet
     /// </summary>
     public partial class Window4 : Window
     {
-        SqlConnection miConexionsql;
         public Window4()
         {
-            string miConexion = ConfigurationManager.ConnectionStrings["namespace ProyectoKaiet.Settings.MultiDeportesConnectionString"].ConnectionString;
-            miConexionsql = new SqlConnection(miConexion);
-            MuestraArticulos();
+            InitializeComponent();
+
         }
-
-        private void MuestraArticulos()
-        {
-            string consulta = "SELECT * FROM empleados";
-            SqlDataAdapter miAdaptadorSQL = new SqlDataAdapter(consulta, miConexionsql);
-            using (miAdaptadorSQL)
-            {
-
-                DataTable articulosTabla = new DataTable();
-                miAdaptadorSQL.Fill(articulosTabla);
-
-                usurname.DisplayMemberPath = "nombreUsuario";
-
-                pwd.DisplayMemberPath = "password";
-
-                listaArticulos.ItemsSource = articulosTabla.DefaultView;
-            }
-        }
-    }
-    private void Button_Click(object sender, RoutedEventArgs e)
+        private void ButtonLogin_Click(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();
         }
     }
+
 }

@@ -23,5 +23,20 @@ namespace ProyectoKaiet
         {
             InitializeComponent();
         }
+
+        public void ButtonAtras_Click(object sender, RoutedEventArgs e)
+        {
+            Window12 window12 = new Window12();
+            window12.Show();
+            this.Close();
+
+        }
+        public void ButtonSiguiente_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 window2 = new Window2();
+            window2.Show();
+            this.Close();
+
+        }
     }
 }

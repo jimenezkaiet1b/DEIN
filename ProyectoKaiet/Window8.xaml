@@ -201,10 +201,10 @@
         <Grid Grid.Row="4" Grid.Column="1" Margin="0,10,0,0">
             <Label Background="White"  HorizontalAlignment="Center" FontSize="10" Margin="-15,14,-17,6" RenderTransformOrigin="0.508,0.818"  >
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" >
-                    <Button FontSize="10" Content="Jornada" Margin="5" Width="50" Height="20" />
-                    <Button  FontSize="10" Content="Clasificacion" Margin="5" Width="59" Height="20" />
+                    <Button FontSize="10" IsEnabled="False" Content="Jornada"  Margin="5" Width="50" Height="20" />
+                    <Button  FontSize="10" Content="Clasificacion" Click="ButtonClasi_Click" Margin="5" Width="59" Height="20" />
                     <Button  FontSize="10" Content="Equipos"  IsEnabled="False" Margin="5" Width="50" Height="20" />
-                    <Button  FontSize="10" Content="Calendario" Margin="5" Click="Button_Click" Width="50" Height="20" />
+                    <Button  FontSize="10" Content="Calendario" Margin="5" Click="ButtonCalen_Click" Width="50" Height="20" />
                 </StackPanel>
             </Label>
 
