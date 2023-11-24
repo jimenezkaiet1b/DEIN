@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoKaiet"
         mc:Ignorable="d"
-        Title="Window6" Height="450" Width="800">
+        Title="Inscripciones de los torneos" Height="450" Width="800"  Icon="Imaagenes/logo.jpg" MaxHeight="450" MaxWidth="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="99*" ></ColumnDefinition>
@@ -98,14 +98,15 @@
 
         </Label>
 
-        <CheckBox Grid.Row="5" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center"></CheckBox>
+        <CheckBox Grid.Row="4" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center"></CheckBox>
+        <!--
         <CheckBox Grid.Row="6" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center"></CheckBox>
         <CheckBox Grid.Row="7" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center"></CheckBox>
         <CheckBox Grid.Row="8" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center"></CheckBox>
         <CheckBox Grid.Row="9" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center"></CheckBox>
         <CheckBox Grid.Row="10" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center"></CheckBox>
         <CheckBox Grid.Row="11" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center"></CheckBox>
-
+-->
         <Label Grid.Row="7" Grid.ColumnSpan="8" Background="#FFFFFF">
 
         </Label>

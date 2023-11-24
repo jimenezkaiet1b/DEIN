@@ -25,16 +25,19 @@ namespace ProyectoKaiet
         }
 
         public void ButtonAtras_Click(object sender, RoutedEventArgs e) {
-            Window14 window14 = new Window14();
-            window14.Show();
+   
+
+            Window3 window3 = new Window3();
+            window3.Show();
             this.Close();
-        
+
         }
         public void ButtonSiguiente_Click(object sender, RoutedEventArgs e)
         {
             Window12 window12 = new Window12();
             window12.Show();
             this.Close();
+
 
         }
     }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoKaiet"
         mc:Ignorable="d"
-        Title="Window8" Height="450" Width="800" Background="#C0D6DF">
+        Title="Jornada" Height="450" Width="800" Background="#C0D6DF"  Icon="Imaagenes/logo.jpg" MaxHeight="450" MaxWidth="800">
 
     <Window.Resources>
         <Style TargetType="TextBlock" x:Key="MyTextBlockStyle">

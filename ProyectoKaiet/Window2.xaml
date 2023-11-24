@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoKaiet"
              mc:Ignorable="d"
-        Title="Window2" Height="450" Width="800" Background="#C0D6DF"
-        x:Name="window2">
+        Title="Torneo creado" Height="450" Width="800" MaxHeight="450" MaxWidth="800" Background="#C0D6DF"
+        x:Name="window2"
+        Icon="Imaagenes/logo.jpg">
 
 
     <Grid>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoKaiet"
         mc:Ignorable="d"
-        Title="Window15" Height="600" Width="800" Background="#C0D6DF">
+        Title="Sobre nosotros" Height="600" Width="800" Background="#C0D6DF" Icon="Imaagenes/logo.jpg" MaxHeight="600" MaxWidth="800">
     <Grid>
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Height="576" Margin="0,0,0,-7" Width="792">
             <TextBlock Text="SOBRE NOSOTROS" FontWeight="Heavy" HorizontalAlignment="Center" Margin="0,0,0,10"/>

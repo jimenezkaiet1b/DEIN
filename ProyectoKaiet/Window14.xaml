@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoKaiet"
         mc:Ignorable="d"
-        Title="Window14" Height="450" Width="800" Background="#02111B">
+        Title="Creador de torneos" Height="450" Width="800" Background="#02111B" Icon="Imaagenes/logo.jpg" MaxHeight="450" MaxWidth="800">
     <Window.Resources>
         <Style TargetType="TextBlock">
             <Setter Property="FontFamily" Value="18"/>
