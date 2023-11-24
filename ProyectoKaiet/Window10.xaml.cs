@@ -35,14 +35,27 @@ namespace ProyectoKaiet
 
         private void ButtonJornada_Click(object sender, RoutedEventArgs e)
         {
-            ResetButtonColors(); // Restaurar colores de todos los botones
-            btnJornada.Foreground = Brushes.LightBlue; // Cambiar color del texto al hacer clic
+            ResetButtonColors();
+            btnJornada.Foreground = Brushes.LightBlue;
+
+
+            Window8 window8 = new Window8();
+            window8.Show();
+            this.Close();
+
+
         }
 
-        private void ButtonClasi_Click(object sender, RoutedEventArgs e)
+
+
+        private void ButtonCale_Click(object sender, RoutedEventArgs e)
         {
-            ResetButtonColors(); // Restaurar colores de todos los botones
-            btnClasificacion.Foreground = Brushes.LightBlue; // Cambiar color del texto al hacer clic
+            ResetButtonColors();
+            btnClasificacion.Foreground = Brushes.LightBlue;
+
+            Window11 window11 = new Window11();
+            window11.Show();
+            this.Close();
         }
 
         // Otros métodos de manejo de clics para los demás botones

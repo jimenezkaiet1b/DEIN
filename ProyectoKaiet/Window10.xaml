@@ -28,9 +28,9 @@
             <Label Background="White" HorizontalAlignment="Center" FontSize="10" Margin="266,368,266,-358">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="29">
                     <Button x:Name="btnJornada" FontSize="10" Content="Jornada" Margin="5" Width="50" Height="20" Click="ButtonJornada_Click"/>
-                    <Button x:Name="btnClasificacion" FontSize="10" Content="Clasificacion" Margin="5" Width="60" Height="20" Click="ButtonClasi_Click"/>
+                    <Button x:Name="btnClasificacion" FontSize="10" Content="Clasificacion" Margin="5" Width="60" Height="20"/>
                     <Button x:Name="btnEquipos" FontSize="10" Content="Equipos" IsEnabled="False" Margin="5" Width="50" Height="20"/>
-                    <Button x:Name="btnCalendario" FontSize="10" Content="Calendario" Margin="5" Width="50" Height="20" IsEnabled="False"/>
+                    <Button x:Name="btnCalendario" FontSize="10" Content="Calendario" Margin="5" Width="50" Height="20" Click="ButtonCale_Click"/>
                 </StackPanel>
             </Label>
         </Grid>

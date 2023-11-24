@@ -45,7 +45,7 @@
         <Button Grid.Column="7" Background="Black" Foreground="White" FontSize="16" Height="21" Margin="19,9" Width="61">Agregar</Button>
 
         <Border Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" BorderBrush="Gray" BorderThickness="1" VerticalAlignment="Center" Height="34" Margin="0,21" >
-            <Button  >
+            <Button Click="ButtonAtras_Click" Margin="33,0,32,0" VerticalAlignment="Bottom" >
                 <Image>
                     <Image.Source>
                         <BitmapImage UriSource="Imaagenes/flechaDere.png"  Rotation="Rotate180" />
@@ -55,7 +55,7 @@
         </Border>
 
         <Border Grid.Column="7" Grid.Row="1" Grid.RowSpan="2" BorderBrush="Gray" BorderThickness="1" VerticalAlignment="Center" Height="34" Margin="0,21" >
-            <Button>
+            <Button Click="ButtonSiguiente_Click">
                 <Image Source="Imaagenes/flechaDere.png"/>
             </Button>
         </Border>
