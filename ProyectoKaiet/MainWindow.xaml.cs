@@ -32,5 +32,40 @@ namespace ProyectoKaiet
             window3.Show();
             this.Close();
         }
+
+        private void ButtonInfo_Click(object sender, RoutedEventArgs e)
+        {
+            Window15 window15 = new Window15();
+            window15.Show();
+            this.Close();
+
+        }
+
+        private void ButtonInscripcion_Click(object sender, RoutedEventArgs e)
+        {
+            Window6 window6 = new Window6();
+            window6.Show();
+            this.Close();
+
+
+        }
+
+        private void Button_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            if (sender is Button button)
+            {
+                // Cambiar el color de fondo cuando el ratón entra
+                button.Background = Brushes.Blue;
+            }
+        }
+
+        private void Button_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            if (sender is Button button)
+            {
+                // Restaurar el color de fondo cuando el ratón sale
+                button.ClearValue(Button.BackgroundProperty);
+            }
+        }
     }
 }

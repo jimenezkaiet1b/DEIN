@@ -32,6 +32,29 @@ namespace ProyectoKaiet
 
             EquiposListView.ItemsSource = equipos;
         }
+
+        private void ButtonJornada_Click(object sender, RoutedEventArgs e)
+        {
+            ResetButtonColors(); // Restaurar colores de todos los botones
+            btnJornada.Foreground = Brushes.LightBlue; // Cambiar color del texto al hacer clic
+        }
+
+        private void ButtonClasi_Click(object sender, RoutedEventArgs e)
+        {
+            ResetButtonColors(); // Restaurar colores de todos los botones
+            btnClasificacion.Foreground = Brushes.LightBlue; // Cambiar color del texto al hacer clic
+        }
+
+        // Otros métodos de manejo de clics para los demás botones
+
+        private void ResetButtonColors()
+        {
+            // Restaurar colores de todos los botones a negro
+            btnJornada.Foreground = Brushes.Black;
+            btnClasificacion.Foreground = Brushes.Black;
+            btnEquipos.Foreground = Brushes.Black;
+            btnCalendario.Foreground = Brushes.Black;
+        }
     }
 
     public class Equipo

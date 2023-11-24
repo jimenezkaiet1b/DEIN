@@ -23,10 +23,22 @@ namespace ProyectoKaiet
         {
             InitializeComponent();
         }
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ButtonCalen_Click(object sender, RoutedEventArgs e)
         {
-            Window4 window4 = new Window4();
-            window4.Show();
+            Window11 window11 = new Window11();
+            window11.Show();
+            this.Close();
+        }
+        private void ButtonJornada_Click(object sender, RoutedEventArgs e)
+        {
+            Window8 window8 = new Window8();
+            window8.Show();
+            this.Close();
+        }
+        private void ButtonClasi_Click(object sender, RoutedEventArgs e)
+        {
+            Window10 window10 = new Window10();
+            window10.Show();
             this.Close();
         }
     }

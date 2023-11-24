@@ -23,5 +23,13 @@ namespace ProyectoKaiet
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window4 window4 = new Window4();
+            window4.Show();
+            window4.Close();
+
+        }
     }
 }

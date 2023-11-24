@@ -23,5 +23,69 @@ namespace ProyectoKaiet
         {
             InitializeComponent();
         }
+
+        private void Txt_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (sender is TextBox textBox)
+            {
+                if (!String.IsNullOrWhiteSpace(textBox.Text))
+                {
+                    textBox.Text = "";
+                }
+            }
+        }
+
+        private void Txt_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (sender is TextBox textBox)
+            {
+                if (string.IsNullOrWhiteSpace(textBox.Text))
+                {
+                    if (textBox.Name == "txtEmail")
+                    {
+                        textBox.Text = "Email";
+                    }
+                    else if (textBox.Name == "txtTelefono")
+                    {
+                        textBox.Text = "Telefono";
+                    }
+                    else if (textBox.Name == "txtTitulo")
+                    {
+                        textBox.Text = "Titulo";
+                    }
+                    else if (textBox.Name == "txtAsunto")
+                    {
+                        textBox.Text = "Asunto";
+                    }
+                    
+                }
+            }
+        }
+
+
+        private void btnEnviar_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtEmail.Text))
+            {
+                MessageBox.Show("El campo Email no puede estar vacío", "Error");
+            }
+            else if (string.IsNullOrWhiteSpace(txtTelefono.Text))
+            {
+                MessageBox.Show("El campo Telefono no puede estar vacío", "Error");
+            }
+            else
+            {
+                Usuario usuario = new Usuario(txtEmail.Text, txtTelefono.Text, txtTitulo.Text, txtAsunto.Text);
+                dataGrid.Items.Add(usuario);
+            }
+        }
+
+        private void btnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow nuevaVentana = new MainWindow();
+            nuevaVentana.Show();
+            this.Close();
+        }
+
     }
 }

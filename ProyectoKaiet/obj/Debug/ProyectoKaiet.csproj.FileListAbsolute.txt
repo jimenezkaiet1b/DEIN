@@ -67,3 +67,5 @@ C:\Users\kaiet\Documents\DAM\DEIN\ProyectoKaiet\obj\Debug\ProyectoKaiet.csproj.G
 C:\Users\kaiet\Documents\DAM\DEIN\ProyectoKaiet\obj\Debug\ProyectoKaiet.csproj.CoreCompileInputs.cache
 C:\Users\kaiet\Documents\DAM\DEIN\ProyectoKaiet\obj\Debug\ProyectoKaiet.exe
 C:\Users\kaiet\Documents\DAM\DEIN\ProyectoKaiet\obj\Debug\ProyectoKaiet.pdb
+C:\Users\kaiet\Documents\DAM\DEIN\ProyectoKaiet\obj\Debug\UserControl2.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\ProyectoKaiet\obj\Debug\UserControl2.baml

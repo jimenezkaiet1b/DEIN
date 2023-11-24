@@ -16,7 +16,7 @@
             <TextBlock Text="404" FontSize="60" Foreground="White" Height="174"></TextBlock>
         </Label>
         <TextBlock Text="ERROR NOT FOUND" FontSize="40" Foreground="White" Margin="216,199,218,170" HorizontalAlignment="Center"></TextBlock>
-        <Button Content="Recargar" Height="35" Margin="350,316,350,68"></Button>
+        <Button Content="Recargar" Height="35" Margin="350,316,350,68" Click="Button_Click"></Button>
 
 
     </Grid>

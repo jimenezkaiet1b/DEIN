@@ -111,10 +111,10 @@
 
         <Label Background="White" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" FontSize="20" Margin="129,10,153,0" Width="454" Grid.ColumnSpan="3">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
-                <Button Content="Jornada" Margin="5" />
-                <Button Content="Clasificacion" Margin="5" />
+                <Button Content="Jornada" Margin="5" Click="ButtonJornada_Click" />
+                <Button Content="Clasificacion" Margin="5" Click="ButtonClasi_Click" />
                 <Button Content="Equipos"  IsEnabled="False" Margin="5" />
-                <Button Content="Calendario" Margin="5" Click="Button_Click" />
+                <Button Content="Calendario" Margin="5" Click="ButtonCalen_Click" />
             </StackPanel>
         </Label>
 

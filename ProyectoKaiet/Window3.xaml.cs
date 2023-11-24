@@ -26,8 +26,8 @@ namespace ProyectoKaiet
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Window2 window2 = new Window2();
-            window2.Show();
+            Window13 window13 = new Window13();
+            window13.Show();
             this.Close();
 
         }
