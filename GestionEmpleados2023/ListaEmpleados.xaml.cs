@@ -22,63 +22,25 @@ namespace GestionEmpleados2023
     /// </summary>
     public partial class ListaEmpleados : Window
     {
-        private SqlConnection conexion;
-
-        public ListaEmpleados()
+        private MainWindow gestionEmp;
+        
+        public ListaEmpleados() 
         {
             InitializeComponent();
-            EstablecerConexio();
-        }
-
-        private void EstablecerConexio() {
-            String CadenaConexion = ConfigurationManager.ConnectionStrings["GestionEmpleados2023.Properties.Settings.GestorEmpleadosEjerConnectionString"].ConnectionString;
-            conexion = new SqlConnection(CadenaConexion);
+            gestionEmp = new MainWindow();
+            cargarEmpleadosEnDataGrid();
         
         }
-
-        public List<Empleado> ObtenerEmpleados(){
-
-            EstablecerConexio();
-
-            String consulta = "SELECT * FROM EMPLEAODS";
-            DataTable Empleados = new DataTable();
-
-            List<Empleado> listaEmpleados = new List<Empleado>();
-
-            SqlDataAdapter adaptador
-
+        private void cargarEmpleadosEnDataGrid() {
+            List<Empleado> empleados = gestionEmp.ObtenerEmpleados();
+            dataGrid.ItemsSource = empleados;
         }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
-    public class Empleado { 
-        public string Nombre { get; set; }
-        public string Apellidos { get; set; }
-        public string EsUsuario { get; set; }
-        public int Edad { get; set; }
-    }
+
 
 }
