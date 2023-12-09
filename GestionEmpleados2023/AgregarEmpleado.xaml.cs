@@ -14,7 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace cc
+namespace GestionEmpleados2023
 {
     /// <summary>
     /// Lógica de interacción para AgregarEmpleado.xaml
@@ -26,9 +26,11 @@ namespace cc
             InitializeComponent();
         }
 
+
+
         private void AgregarEmpleado_Click(object sender, RoutedEventArgs e) {
             string nombre = txtNombre.Text;
-            string apellidos = txtApellidos.Text;
+            string apellidos = txtApellido.Text;
             bool esUsuario = chkEsUsuario.IsChecked ?? false;
             int edad;
 
@@ -44,17 +46,30 @@ namespace cc
         }
 
         private void AgregarEmpleadoString(string nombe, string apellidos, bool esUsuario, int edad) {
-            using (SqlConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["AgregarEmpleadoString.Properties.Settings.GestorEmpleadosEjerConnectionString"].ConnectionString)) {
+            using (SqlConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["GestionEmpleados2023.Properties.Settings.GestorEmpleadosEjerConnectionString"].ConnectionString)) {
 
                 string consulta = "INSERT INTO EMPLEADOS (Nombre, Apellidos, EsUsuario, Edad) VALUES (@nombre, @apellidos, @Apellidos, @EsUsuario, @Edad)";
 
-                using (SqlCommand cnd = new SqlCommand(consulta,conexion) ) {
-                    cnd.Parameters.AddWithValue("@Nombre", nombe);
-                
-                
+                using (SqlCommand cmd = new SqlCommand(consulta,conexion) ) {
+                    cmd.Parameters.AddWithValue("@Nombre", nombe);
+                    cmd.Parameters.AddWithValue("@Apellidos", apellidos);
+                    cmd.Parameters.AddWithValue("@EsUsuario", esUsuario);
+                    cmd.Parameters.AddWithValue("@Edad", edad);
+
+                    try {
+                        conexion.Open();
+                        cmd.ExecuteNonQuery();
+                    }
+                    catch (Exception ex) {
+                        MessageBox.Show($"Error al agregar empleado: {ex.Message} ", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    
+                    }
+
+
+
                 }
-            
-            
+
+
             }
         
             

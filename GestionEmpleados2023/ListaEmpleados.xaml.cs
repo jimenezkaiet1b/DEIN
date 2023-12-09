@@ -22,12 +22,12 @@ namespace GestionEmpleados2023
     /// </summary>
     public partial class ListaEmpleados : Window
     {
-        private MainWindow gestionEmp;
+        private GestionEmpleados gestionEmp;
         
         public ListaEmpleados() 
         {
             InitializeComponent();
-            gestionEmp = new MainWindow();
+            gestionEmp = new GestionEmpleados();
             cargarEmpleadosEnDataGrid();
         
         }

@@ -22,9 +22,9 @@
         </Grid.RowDefinitions>
 
         <TextBlock HorizontalAlignment="Center" Text="Departamento RRHH" FontSize="42" VerticalAlignment="Center" Grid.ColumnSpan="3" Height="56" Margin="201,42,201,41" Width="390"></TextBlock>
-        <Button Content="Buscar empleado" Grid.Row="1"></Button>
-        <Button Grid.Column="1" Grid.Row="1" Content="Lista de Empleados" Click="Button_Click"></Button>
-        <Button Grid.Column="2" Grid.Row="1" Content="Agregar Empleados"></Button>
+        <Button Content="Buscar empleado" Grid.Row="1" Click="buscar_click"></Button>
+        <Button Grid.Column="1" Grid.Row="1" Content="Lista de Empleados" Click="listaEmpleados_click"></Button>
+        <Button Grid.Column="2" Grid.Row="1" Content="Agregar Empleados" Click="AgregarEmpleado_click"></Button>
 
     </Grid>
 </Window>
