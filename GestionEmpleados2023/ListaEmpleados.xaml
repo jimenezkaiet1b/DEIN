@@ -8,7 +8,9 @@
         Title="Lista de empleados" Height="450" Width="800">
     <Grid>
         <Label Content="Listado de Empleados" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" FontSize="16" FontWeight="Bold"/>
-        <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,60,10,10"/>
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,60,10,73"/>
+
+        <Button Content="Borrar" Margin="365,381,362,10" HorizontalAlignment="Center" Click="eliminar_click"></Button>
     </Grid>
         
 

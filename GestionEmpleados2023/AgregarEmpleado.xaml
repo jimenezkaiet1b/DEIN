@@ -29,6 +29,7 @@
         <TextBox x:Name="txtEdad" Grid.Row="3" Margin="50,26,101,26" ></TextBox>
 
         <Button Grid.Row="4" Content="Agregar Empleado" Margin="50,0,101,47" Click="AgregarEmpleado_Click"></Button>
+        <Button Grid.Row="4" Margin="299,42,382,0" Click="Volver">Volver</Button>
 
 
 
