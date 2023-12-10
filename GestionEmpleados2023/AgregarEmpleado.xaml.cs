@@ -21,6 +21,7 @@ namespace GestionEmpleados2023
     /// </summary>
     public partial class AgregarEmpleado : Window
     {
+        public Empleado empleadoActualizar { get; set; }
         public AgregarEmpleado()
         {
             InitializeComponent();
@@ -46,33 +47,52 @@ namespace GestionEmpleados2023
         }
 
         private void AgregarEmpleadoString(string nombe, string apellidos, bool esUsuario, int edad) {
-            using (SqlConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["GestionEmpleados2023.Properties.Settings.GestorEmpleadosEjerConnectionString"].ConnectionString)) {
+            using (SqlConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["GestionEmpleados2023.Properties.Settings.GestionEmpleadosConnectionString"].ConnectionString))
+            {
+                string consulta = "INSERT INTO EMPLEADOS (Nombre, Apellidos, EsUsuario, Edad) VALUES (@Nombre, @Apellidos, @EsUsuario, @Edad)";
 
-                string consulta = "INSERT INTO EMPLEADOS (Nombre, Apellidos, EsUsuario, Edad) VALUES (@nombre, @apellidos, @Apellidos, @EsUsuario, @Edad)";
-
-                using (SqlCommand cmd = new SqlCommand(consulta,conexion) ) {
+                using (SqlCommand cmd = new SqlCommand(consulta, conexion))
+                {
                     cmd.Parameters.AddWithValue("@Nombre", nombe);
                     cmd.Parameters.AddWithValue("@Apellidos", apellidos);
                     cmd.Parameters.AddWithValue("@EsUsuario", esUsuario);
                     cmd.Parameters.AddWithValue("@Edad", edad);
 
-                    try {
+                    try
+                    {
                         conexion.Open();
                         cmd.ExecuteNonQuery();
                     }
-                    catch (Exception ex) {
-                        MessageBox.Show($"Error al agregar empleado: {ex.Message} ", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                    
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error al agregar empleado: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     }
-
-
-
                 }
-
-
             }
-        
-            
+
+
+        }
+        private void Volver(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow();
+            Window parentWindow = Window.GetWindow(this);
+
+            if (parentWindow != null)
+            {
+                parentWindow.Close();
+            }
+            main.Show();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+           
+            if (empleadoActualizar != null)
+            {
+                txtNombre.Text = empleadoActualizar.Nombre;
+                txtApellido.Text = empleadoActualizar.Apellidos;
+               
+            }
         }
     }
     

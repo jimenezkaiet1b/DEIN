@@ -33,5 +33,16 @@ namespace GestionEmpleados2023.Properties {
                 return ((string)(this["GestorEmpleadosEjerConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;Initial Catalog=GestionEmpleados;Integrated Se" +
+            "curity=True")]
+        public string GestionEmpleadosConnectionString {
+            get {
+                return ((string)(this["GestionEmpleadosConnectionString"]));
+            }
+        }
     }
 }

@@ -7,6 +7,30 @@
         mc:Ignorable="d"
         Title="BuscarEmpleado" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" MinHeight="186"/>
+            <RowDefinition Height="Auto" MinHeight="40"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Nombre:" Grid.Row="0" Margin="10"/>
+        <TextBox x:Name="txtNombre" Grid.Row="1" Margin="46,10,323,10"/>
+
+        <TextBlock Text="Apellidos:" Grid.Row="2" Margin="10"/>
+        <TextBox x:Name="txtApellidos" Grid.Row="3" Margin="46,10,323,10"/>
+
+        <Button Content="Buscar" Grid.Row="4" Margin="268,10,336,10" Click="buscar_Click"/>
+
+        <DataGrid x:Name="dataGrid" Grid.Row="5"
+              AutoGenerateColumns="True" ItemsSource="{Binding}"
+              CanUserAddRows="False" CanUserDeleteRows="False"
+              IsReadOnly="False" CellEditEnding="DataGrid_CellEditEnding"/>
+
+        <Button Content="Actualizar Registro" Grid.Row="6" Margin="268,10,336,10" Click="actualizar_Click"/>
     </Grid>
+
 </Window>

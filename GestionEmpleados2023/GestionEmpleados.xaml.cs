@@ -36,18 +36,19 @@ namespace GestionEmpleados2023
         {
             InitializeComponent();
             EstablecerConexio();
+           
         }
 
         private void EstablecerConexio()
         {
-            String CadenaConexion = ConfigurationManager.ConnectionStrings["GestionEmpleados2023.Properties.Settings.GestorEmpleadosEjerConnectionString"].ConnectionString;
+            string CadenaConexion = ConfigurationManager.ConnectionStrings["GestionEmpleados2023.Properties.Settings.GestionEmpleadosConnectionString"].ConnectionString;
             conexion = new SqlConnection(CadenaConexion);
 
         }
 
         public List<Empleado> ObtenerEmpleados()
         {
-
+            EstablecerConexio();
             string consulta = "SELECT * FROM EMPLEADOS";
             DataTable Empleados = new DataTable();
 
@@ -70,6 +71,36 @@ namespace GestionEmpleados2023
 
             return listaEmpleados;
 
+        }
+
+        public List<Empleado> BuscarPorNombreApellidos(string nombre, string apellidos)
+        {
+            EstablecerConexio();
+
+            string consulta = "SELECT * FROM EMPLEADOS WHERE Nombre LIKE @Nombre AND Apellidos LIKE @Apellidos";
+            DataTable Empleados = new DataTable();
+
+            List<Empleado> listaEmpleados = new List<Empleado>();
+            SqlDataAdapter adaptador = new SqlDataAdapter(consulta, conexion);
+
+            using (adaptador)
+            {
+                adaptador.SelectCommand.Parameters.AddWithValue("@Nombre", "%" + nombre + "%");
+                adaptador.SelectCommand.Parameters.AddWithValue("@Apellidos", "%" + apellidos + "%");
+
+                adaptador.Fill(Empleados);
+            }
+
+            listaEmpleados = Empleados.AsEnumerable().Select(row => new Empleado
+            {
+                Nombre = row.Field<string>("Nombre"),
+                Apellidos = row.Field<string>("Apellidos"),
+                EsUsuario = (row["EsUsuario"] != DBNull.Value) ? row.Field<bool>("EsUsuario") : false,
+                Edad = row.Field<int>("Edad")
+
+            }).ToList();
+
+            return listaEmpleados;
         }
     }
 }
