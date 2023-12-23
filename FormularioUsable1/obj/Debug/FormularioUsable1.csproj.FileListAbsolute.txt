@@ -1,0 +1,10 @@
+C:\Users\kaiet\Documents\DAM\DEIN\FormularioUsable1\obj\Debug\FormularioUsable1.csproj.AssemblyReference.cache
+C:\Users\kaiet\Documents\DAM\DEIN\FormularioUsable1\obj\Debug\Adicional.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\FormularioUsable1\obj\Debug\Contacto.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\FormularioUsable1\obj\Debug\DatosPersonales.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\FormularioUsable1\obj\Debug\Fotografia.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\FormularioUsable1\obj\Debug\ListaEmpleados.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\FormularioUsable1\obj\Debug\MainWindow.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\FormularioUsable1\obj\Debug\App.g.cs
+C:\Users\kaiet\Documents\DAM\DEIN\FormularioUsable1\obj\Debug\FormularioUsable1_MarkupCompile.cache
+C:\Users\kaiet\Documents\DAM\DEIN\FormularioUsable1\obj\Debug\FormularioUsable1_MarkupCompile.lref
