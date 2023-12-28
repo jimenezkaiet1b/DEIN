@@ -23,5 +23,61 @@ namespace FormularioUsable1
         {
             InitializeComponent();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Adicional nuevaVentana = new Adicional();
+            nuevaVentana.Show();
+            this.Close();
+
+
+        }
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Contacto nuevaVentana = new Contacto();
+            nuevaVentana.Show();
+            this.Close();
+        }
+
+        private void Txt_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (sender is TextBox textBox)
+            {
+                if (!String.IsNullOrWhiteSpace(textBox.Text))
+                {
+                    textBox.Text = "";
+                }
+            }
+        }
+
+        private void Txt_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (sender is TextBox textBox)
+            {
+                if (string.IsNullOrWhiteSpace(textBox.Text))
+                {
+                    if (textBox.Name == "direccionBox")
+                    {
+                        textBox.Text = "Direccion";
+                    }
+                    else if (textBox.Name == "ciudadBox")
+                    {
+                        textBox.Text = "Ciudad";
+                    }
+                    else if (textBox.Name == "provinciaBox")
+                    {
+                        textBox.Text = "Provincia";
+                    }
+                    else if (textBox.Name == "codigopostalBox")
+                    {
+                        textBox.Text = "Codigo postal";
+                    }
+                    else if (textBox.Name == "paisBox")
+                    {
+                        textBox.Text = "Pais";
+                    }
+                }
+            }
+        }
     }
 }

@@ -23,5 +23,13 @@ namespace FormularioUsable1
         {
             InitializeComponent();
         }
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            DatosPersonales nuevaVentana = new DatosPersonales();
+            nuevaVentana.Show();
+            this.Close();
+
+
+        }
     }
 }
