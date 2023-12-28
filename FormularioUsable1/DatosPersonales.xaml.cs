@@ -23,6 +23,8 @@ namespace FormularioUsable1
         private List<Empleado> empleados = new List<Empleado>();
         private ListaEmpleados paAnaidr = new ListaEmpleados();
 
+
+
         public DatosPersonales()
         {
             InitializeComponent();
@@ -40,22 +42,28 @@ namespace FormularioUsable1
         }
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            if (nombreBox.Text == "")
+            string nombre = nombreBox.Text;
+            string apellidos = apellidosBox.Text;
+            string email = emailBox.Text;
+            string telefono = telefonoBox.Text;
+
+            if (string.IsNullOrWhiteSpace(nombre))
             {
                 MessageBox.Show("El campo Nombre no puede estar vacío", "Error");
             }
-            else if (emailBox.Text == "")
+            else if (string.IsNullOrWhiteSpace(email) || !email.Contains("@"))
             {
-                MessageBox.Show("El campo E-mail no puede estar vacío", "Error");
+                MessageBox.Show("Ingrese un correo electrónico válido", "Error");
             }
-            else if (telefonoBox.Text == "")
+            else if (string.IsNullOrWhiteSpace(telefono) || telefono.Length != 9 || !telefono.All(char.IsDigit))
             {
-                MessageBox.Show("El campo Telefono no puede estar vacío", "Error");
+                MessageBox.Show("Ingrese un número de teléfono válido (deben de ser 9 dígitos)", "Error");
             }
             else
             {
                 Empleado empleado = new Empleado(nombreBox.Text, apellidosBox.Text, emailBox.Text, telefonoBox.Text);
                 paAnaidr.dataGrid.Items.Add(empleado);
+
 
                 Contacto nuevaVentana = new Contacto();
                 nuevaVentana.Show();
