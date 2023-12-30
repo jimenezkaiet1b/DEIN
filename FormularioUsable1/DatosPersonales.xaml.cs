@@ -21,7 +21,7 @@ namespace FormularioUsable1
     public partial class DatosPersonales : Window
     {
         private List<Empleado> empleados = new List<Empleado>();
-        private ListaEmpleados paAnaidr = new ListaEmpleados();
+        public static ListaEmpleados paAnaidr = new ListaEmpleados();
 
 
 

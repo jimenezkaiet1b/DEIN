@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +23,7 @@ namespace FormularioUsable1
         public ListaEmpleados()
         {
             InitializeComponent();
+
         }
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
@@ -29,7 +31,11 @@ namespace FormularioUsable1
             nuevaVentana.Show();
             this.Close();
 
-
+        }
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            Application.Current.Shutdown();
         }
     }
 }

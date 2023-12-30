@@ -20,15 +20,19 @@ namespace FormularioUsable1
     /// </summary>
     public partial class Fotografia : Window
     {
+
+        private ListaEmpleados ListaEmpleados = DatosPersonales.paAnaidr;
         public Fotografia()
         {
             InitializeComponent();
+            
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            ListaEmpleados nuevaVentana = new ListaEmpleados();
-            nuevaVentana.Show();
+            //////////////////////////////////////////////////
+            
+            ListaEmpleados.Show();
             this.Close();
 
 
