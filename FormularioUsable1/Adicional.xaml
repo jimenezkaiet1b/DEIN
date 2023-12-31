@@ -50,7 +50,7 @@
         </StackPanel>
         <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Vertical">
             <TextBlock Text="Descripcion del puesto de trabajo actual:" ></TextBlock>
-            <TextBox Height="35" ></TextBox>
+            <TextBox Height="35"  AcceptsReturn="True" TextWrapping="Wrap"></TextBox>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Grid.Row="12" HorizontalAlignment="Center" Height="35" Grid.Column="1">
