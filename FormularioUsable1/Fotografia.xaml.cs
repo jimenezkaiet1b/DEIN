@@ -25,7 +25,9 @@ namespace FormularioUsable1
         public Fotografia()
         {
             InitializeComponent();
-            
+            progressBar.Value = 100;
+
+
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -39,7 +41,7 @@ namespace FormularioUsable1
         }
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Fotografia nuevaVentana = new Fotografia();
+            Adicional nuevaVentana = new Adicional();
             nuevaVentana.Show();
             this.Close();
         }

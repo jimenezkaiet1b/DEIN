@@ -28,6 +28,8 @@ namespace FormularioUsable1
         public DatosPersonales()
         {
             InitializeComponent();
+            progressBar.Value = 25;
+
         }
 
         private void Txt_GotFocus(object sender, RoutedEventArgs e)
@@ -42,6 +44,8 @@ namespace FormularioUsable1
         }
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+
+
             string nombre = nombreBox.Text;
             string apellidos = apellidosBox.Text;
             string email = emailBox.Text;
@@ -69,6 +73,7 @@ namespace FormularioUsable1
                 nuevaVentana.Show();
                 this.Close();
             }
+
 
         }
         private void Button_Click_2(object sender, RoutedEventArgs e)

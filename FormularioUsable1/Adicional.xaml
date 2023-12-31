@@ -10,6 +10,8 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
+
+            <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
@@ -25,30 +27,34 @@
         </Grid.ColumnDefinitions>
 
         <TextBlock Text="Información adicional" FontSize="20" HorizontalAlignment="Center" Grid.Column="0" Grid.ColumnSpan="3"/>
+        <StackPanel  Grid.Column="1" Grid.Row="1" Orientation="Vertical" >
+            <TextBlock Text="Progreso del formulario"></TextBlock>
+            <ProgressBar Grid.Column="1" Grid.Row="1" x:Name="progressBar" Height="20" VerticalAlignment="Top" Margin="0,0,0,10" IsIndeterminate="False" Value="50"/>
+        </StackPanel>
 
-        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical">
+        <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Vertical">
             <TextBlock Text="DNI" Width="50" HorizontalAlignment="Left" ></TextBlock>
             <TextBox Background="#D3D3D3 "></TextBox>
         </StackPanel>
 
-        <StackPanel Margin="0,0,0,5" Grid.Row="2" Grid.Column="1" Orientation="Vertical">
+        <StackPanel Margin="0,0,0,5" Grid.Row="3" Grid.Column="1" Orientation="Vertical">
             <TextBlock Text="Enlace a red social" HorizontalAlignment="Left"></TextBlock>
             <TextBox  Background="#D3D3D3"/>
         </StackPanel>
-        <StackPanel Margin="0,0,0,5" Grid.Row="3" Grid.Column="1" Orientation="Vertical">
+        <StackPanel Margin="0,0,0,5" Grid.Row="4" Grid.Column="1" Orientation="Vertical">
             <TextBlock Text="Rol actual"></TextBlock>
             <ComboBox>
                 <ComboBoxItem Content="Desarrollador"></ComboBoxItem>
                 <ComboBoxItem Content="Analista"></ComboBoxItem>
             </ComboBox>
         </StackPanel>
-        <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Vertical">
+        <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Vertical">
             <TextBlock Text="Descripcion del puesto de trabajo actual:" ></TextBlock>
-            <TextBox Height="44" ></TextBox>
+            <TextBox Height="35" ></TextBox>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Grid.Row="12" HorizontalAlignment="Center" Height="35" Grid.Column="1">
-            <Button Width="100" Margin="0,0,50,0" Click="Button_Click_2" Background="#FF7F7F">Cancelar</Button>
+            <Button Width="100" Margin="0,0,50,0" Click="Button_Click_2" Background="#FF7F7F">Anterior</Button>
             <Button Width="100"  Click="Button_Click_1" Background="#2ECC71">Siguiente</Button>
         </StackPanel>
 

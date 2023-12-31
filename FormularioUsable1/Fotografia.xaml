@@ -14,6 +14,7 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
 
 
         </Grid.RowDefinitions>
@@ -24,15 +25,19 @@
         </Grid.ColumnDefinitions>
 
         <TextBlock Text="Fotografia" FontSize="20" HorizontalAlignment="Center" Grid.Column="0" Grid.ColumnSpan="3"/>
+        <StackPanel  Grid.Column="1" Grid.Row="1" Orientation="Vertical" >
+            <TextBlock Text="Progreso del formulario"></TextBlock>
+            <ProgressBar Grid.Column="1" Grid.Row="1" x:Name="progressBar" Height="20" VerticalAlignment="Top" Margin="0,0,0,10" IsIndeterminate="False" Value="50"/>
+        </StackPanel>
 
-        <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Vertical" Grid.RowSpan="2">
+        <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Vertical" Grid.RowSpan="2">
             <TextBlock Text="Adjuntar fotografia"  VerticalAlignment="Center" Margin="0,0,0,10"/>
             <Button Content="Cargar Foto" Click="Button_Click" />
             <Image x:Name="imageControl" Width="200" Height="150" Stretch="Uniform" Margin="10" />
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Grid.Row="12" HorizontalAlignment="Center" Height="35" Grid.Column="1">
-            <Button Width="100" Margin="0,0,50,0" Click="Button_Click_2" Background="#FF7F7F">Cancelar</Button>
+            <Button Width="100" Margin="0,0,50,0" Click="Button_Click_2" Background="#FF7F7F">Anterior</Button>
             <Button Width="100"  Click="Button_Click_1" Background="#2ECC71">Siguiente</Button>
         </StackPanel>
 

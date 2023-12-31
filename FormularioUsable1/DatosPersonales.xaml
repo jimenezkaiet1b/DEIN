@@ -17,6 +17,8 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
 
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -28,34 +30,39 @@
 
         <TextBlock Text="Introducción de Datos de Empleados" FontSize="20" HorizontalAlignment="Center" Grid.Column="0" Grid.ColumnSpan="3"/>
 
-        <StackPanel Margin="0,0,0,5" Grid.Row="1" Grid.Column="1" Orientation="Vertical">
+        <StackPanel  Grid.Column="1" Grid.Row="1" Orientation="Vertical" >
+            <TextBlock Text="Progreso del formulario"></TextBlock>
+            <ProgressBar Grid.Column="1" Grid.Row="1" x:Name="progressBar" Height="20" VerticalAlignment="Top" Margin="0,0,0,10" IsIndeterminate="False" Value="50"/>
+        </StackPanel>
+
+        <StackPanel Margin="0,0,0,5" Grid.Row="2" Grid.Column="1" Orientation="Vertical">
             <TextBlock HorizontalAlignment="Left"  Text="Nombre*" Width="50" Background="#F5F5F5"></TextBlock>
             <TextBox x:Name="nombreBox"  Background="#D3D3D3 "/>
         </StackPanel>
 
-        <StackPanel Margin="0,0,0,5" Grid.Row="2"  Grid.Column="1" Orientation="Vertical">
+        <StackPanel Margin="0,0,0,5" Grid.Row="3"  Grid.Column="1" Orientation="Vertical">
             <TextBlock HorizontalAlignment="Left" Text="Apellidos"  Width="50"></TextBlock>
             <TextBox   x:Name="apellidosBox"  Background="#D3D3D3 "/>
         </StackPanel>
 
-        <StackPanel Margin="0,0,0,5" Grid.Row="3"  Grid.Column="1" Orientation="Vertical">
+        <StackPanel Margin="0,0,0,5" Grid.Row="4"  Grid.Column="1" Orientation="Vertical">
             <TextBlock Text="E-mail*" Width="50" HorizontalAlignment="Left" Background="#F5F5F5"></TextBlock>
             <TextBox  x:Name="emailBox"   Background="#D3D3D3 "></TextBox>
         </StackPanel>
 
-        <StackPanel Margin="0,0,0,5" Grid.Row="4"  Grid.Column="1" Orientation="Vertical">
+        <StackPanel Margin="0,0,0,5" Grid.Row="5"  Grid.Column="1" Orientation="Vertical">
             <TextBlock Background="#F5F5F5" Text="Teléfono*" Width="50" HorizontalAlignment="Left"></TextBlock>
             <TextBox  Background="#D3D3D3 "  x:Name="telefonoBox"  GotFocus="Txt_GotFocus"></TextBox>
         </StackPanel>
 
 
-        <StackPanel Margin="0,0,0,5" Grid.Row="5"  Grid.Column="1" Orientation="Vertical">
+        <StackPanel Margin="0,0,0,5" Grid.Row="6"  Grid.Column="1" Orientation="Vertical">
             <TextBlock Text="Fecha de nacimiento" Width="120" HorizontalAlignment="Left" ></TextBlock>
             <DatePicker Text="Fecha de nacimiento"  Background="#D3D3D3 " />
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Grid.Row="12" HorizontalAlignment="Center" Height="35" Grid.Column="1">
-            <Button Width="100" Margin="0,0,50,0" Click="Button_Click_2" Background="#FF7F7F">Cancelar</Button>
+            <Button Width="100" Margin="0,0,50,0" Click="Button_Click_2" Background="#FF7F7F">Anterior</Button>
             <Button Width="100"  Click="Button_Click_1" Background="#2ECC71">Siguiente</Button>
         </StackPanel>
     </Grid>

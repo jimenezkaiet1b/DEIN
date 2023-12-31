@@ -19,13 +19,17 @@ namespace FormularioUsable1
     /// </summary>
     public partial class Contacto : Window
     {
+
         public Contacto()
         {
             InitializeComponent();
+            progressBar.Value = 50;
+
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+
             Adicional nuevaVentana = new Adicional();
             nuevaVentana.Show();
             this.Close();
@@ -34,7 +38,8 @@ namespace FormularioUsable1
         }
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Contacto nuevaVentana = new Contacto();
+            DatosPersonales nuevaVentana = new DatosPersonales();
+            DatosPersonales.paAnaidr = new ListaEmpleados();
             nuevaVentana.Show();
             this.Close();
         }
